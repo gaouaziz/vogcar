@@ -4,11 +4,12 @@
     class="relative flex min-h-[720px] items-center bg-cover bg-center pt-20"
     style="background-image: url('/images/vog-car-hero.jpg')"
   >
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-[#003f3b]/70" />
+    <!-- Overlay optimisé : opacité réduite de /70 à /30 pour une image plus claire et visible -->
+    <div class="absolute inset-0 bg-[#003f3b]/30" />
 
     <div class="relative mx-auto w-full max-w-7xl px-6 py-20 lg:px-8">
-      <div class="max-w-3xl text-white">
+      <!-- Ajout d'une ombre portée sur le texte (drop-shadow-md) pour garantir une excellente lisibilité sur fond clair -->
+      <div class="max-w-3xl text-white drop-shadow-md">
         <p
           class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-[#48d5c7]"
         >
@@ -24,7 +25,7 @@
           </span>
         </h1>
 
-        <p class="mt-6 max-w-2xl text-lg leading-8 text-white/90">
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-white">
           Découvrez une solution simple et pratique pour louer votre voiture.
           VOG CAR vous accompagne pour vos déplacements professionnels,
           personnels et vos transferts depuis l'aéroport.

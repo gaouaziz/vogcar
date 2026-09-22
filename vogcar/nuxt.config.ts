@@ -11,6 +11,16 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  runtimeConfig: {
+    nodeEnv: 'development',
+    zohoUser: '',
+    zohoPass: '',
+    turso: {
+      databaseUrl: '',
+      authToken: ''
+    }
+  },
+
   routeRules: {
     '/': { prerender: true }
   },

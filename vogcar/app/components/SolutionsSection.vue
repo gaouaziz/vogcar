@@ -19,16 +19,15 @@
         </h2>
 
         <p class="mt-4 leading-7 text-gray-600">
-          Découvrez nos services pour faciliter vos déplacements et votre
-          expérience de location.
+          Découvrez nos services complets conçus pour faciliter vos déplacements, maximiser votre confort et garantir une expérience de location fluide et sereine.
         </p>
       </div>
 
-      <!-- Services -->
-      <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <!-- Services (Configuration sur 2 colonnes par ligne) -->
+      <div class="mt-12 grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
         <!-- Airport -->
         <article
-          class="group rounded-2xl bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+          class="group rounded-2xl bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
         >
           <div
             class="flex h-14 w-14 items-center justify-center rounded-full bg-[#008f83] text-white"
@@ -50,26 +49,17 @@
           </div>
 
           <h3 class="mt-6 text-xl font-bold text-[#102a43]">
-            Aéroport
+            Service Aéroport
           </h3>
 
-          <p class="mt-3 leading-7 text-gray-600">
-            Une solution pratique pour vos déplacements depuis ou vers
-            l'aéroport.
+          <p class="mt-3 text-sm leading-6 text-gray-600">
+            Simplifiez vos arrivées et départs grâce à notre prise en charge directe aux terminaux. Nous suivons l'état de votre vol en temps réel afin de garantir la mise à disposition immédiate de votre véhicule dès votre atterrissage, même en cas de retard, vous évitant ainsi de longues files d'attente.
           </p>
-
-          <a
-            href="#contacts"
-            class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#008f83]"
-          >
-            En savoir plus
-            <span class="transition group-hover:translate-x-1">→</span>
-          </a>
         </article>
 
         <!-- Chauffeur -->
         <article
-          class="group rounded-2xl bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+          class="group rounded-2xl bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
         >
           <div
             class="flex h-14 w-14 items-center justify-center rounded-full bg-[#008f83] text-white"
@@ -91,25 +81,17 @@
           </div>
 
           <h3 class="mt-6 text-xl font-bold text-[#102a43]">
-            Voiture avec chauffeur
+            Location avec Chauffeur
           </h3>
 
-          <p class="mt-3 leading-7 text-gray-600">
-            Profitez d'un service avec chauffeur pour vos déplacements.
+          <p class="mt-3 text-sm leading-6 text-gray-600">
+            Installez-vous confortablement et laissez-vous conduire par nos chauffeurs professionnels et bilingues. Idéale pour vos rendez-vous professionnels, vos événements privés ou vos circuits touristiques, cette option vous permet de vous concentrer sur vos priorités en évitant le stress du trafic et du stationnement.
           </p>
-
-          <a
-            href="#contacts"
-            class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#008f83]"
-          >
-            En savoir plus
-            <span class="transition group-hover:translate-x-1">→</span>
-          </a>
         </article>
 
         <!-- 7/7 -->
         <article
-          class="group rounded-2xl bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+          class="group rounded-2xl bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
         >
           <div
             class="flex h-14 w-14 items-center justify-center rounded-full bg-[#008f83] text-white"
@@ -120,25 +102,17 @@
           </div>
 
           <h3 class="mt-6 text-xl font-bold text-[#102a43]">
-            7/7 jours
+            Disponibilité 7j/7
           </h3>
 
-          <p class="mt-3 leading-7 text-gray-600">
-            Un service disponible tous les jours pour répondre à vos besoins.
+          <p class="mt-3 text-sm leading-6 text-gray-600">
+            Parce que vos besoins de mobilité n'attendent pas, notre agence reste pleinement opérationnelle tous les jours de la semaine, y compris les week-ends et les jours fériés. Vous bénéficiez ainsi d'une flexibilité totale pour planifier, réserver, retirer ou restituer vos véhicules selon votre propre calendrier.
           </p>
-
-          <a
-            href="tel:0615121097"
-            class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#008f83]"
-          >
-            Nous contacter
-            <span class="transition group-hover:translate-x-1">→</span>
-          </a>
         </article>
 
         <!-- Assistance -->
         <article
-          class="group rounded-2xl bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+          class="group rounded-2xl bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
         >
           <div
             class="flex h-14 w-14 items-center justify-center rounded-full bg-[#008f83] text-white"
@@ -160,21 +134,12 @@
           </div>
 
           <h3 class="mt-6 text-xl font-bold text-[#102a43]">
-            Accompagnement
+            Accompagnement & Suivi
           </h3>
 
-          <p class="mt-3 leading-7 text-gray-600">
-            Une équipe à votre écoute pour vous accompagner dans votre
-            réservation.
+          <p class="mt-3 text-sm leading-6 text-gray-600">
+            Profitez d'un service client sur-mesure dès le premier contact. Nos conseillers dédiés vous guident dans le choix de la catégorie de véhicule la plus adaptée et vous apportent une assistance continue tout au long de votre contrat de location pour répondre à vos demandes spécifiques et imprévus de route.
           </p>
-
-          <a
-            href="#contacts"
-            class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#008f83]"
-          >
-            Nous contacter
-            <span class="transition group-hover:translate-x-1">→</span>
-          </a>
         </article>
       </div>
     </div>

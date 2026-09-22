@@ -14,23 +14,37 @@
           class="w-full rounded-2xl object-cover shadow-xl"
         >
 
-        <!-- Badge -->
+        <!-- Badge optimisé : Texte et icône mis à jour pour correspondre à la charte graphique -->
         <div
-          class="absolute bottom-6 left-6 flex items-center gap-3 rounded-xl bg-[#008f83] px-5 py-4 text-white shadow-lg"
+          class="absolute bottom-6 left-6 flex items-center gap-4 rounded-xl bg-[#003f3b] px-5 py-4 text-white shadow-lg backdrop-blur-sm"
         >
           <div
-            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/15"
+            class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#48d5c7]/20 text-[#48d5c7]"
           >
-            ✓
+            <!-- Icône Utilisateur / Flotte moderne en SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
+            </svg>
           </div>
 
           <div>
-            <p class="text-sm font-bold">
-              VOG CAR
+            <p class="text-sm font-bold tracking-wide">
+              Des véhicules récents
             </p>
 
             <p class="text-xs text-white/80">
-              Votre mobilité, notre priorité
+              et bien entretenus
             </p>
           </div>
         </div>
@@ -68,7 +82,20 @@
             <div
               class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#008f83]/10 text-[#008f83]"
             >
-              ✓
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
             </div>
 
             <h3 class="font-bold text-[#102a43]">
@@ -84,7 +111,20 @@
             <div
               class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#008f83]/10 text-[#008f83]"
             >
-              ✓
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
             </div>
 
             <h3 class="font-bold text-[#102a43]">
@@ -100,7 +140,20 @@
             <div
               class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#008f83]/10 text-[#008f83]"
             >
-              ✓
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
             </div>
 
             <h3 class="font-bold text-[#102a43]">

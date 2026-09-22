@@ -33,7 +33,7 @@
           <ul class="mt-5 space-y-3 text-sm text-white/70">
             <li>
               <a
-                href="#accueil"
+                href="/"
                 class="transition hover:text-[#48d5c7]"
               >
                 Accueil
@@ -42,7 +42,7 @@
 
             <li>
               <a
-                href="#parc"
+                href="/list-parc"
                 class="transition hover:text-[#48d5c7]"
               >
                 Liste de parc
@@ -51,7 +51,7 @@
 
             <li>
               <a
-                href="#a-propos"
+                href="/a-propos"
                 class="transition hover:text-[#48d5c7]"
               >
                 À propos
@@ -60,7 +60,7 @@
 
             <li>
               <a
-                href="#faq"
+                href="/faq"
                 class="transition hover:text-[#48d5c7]"
               >
                 FAQ
@@ -69,7 +69,7 @@
 
             <li>
               <a
-                href="#contacts"
+                href="/contacts"
                 class="transition hover:text-[#48d5c7]"
               >
                 Contacts
@@ -85,6 +85,7 @@
           </h3>
 
           <ul class="mt-5 space-y-4 text-sm text-white/70">
+            <!-- Phone -->
             <li class="flex items-center gap-3">
               <span class="text-[#48d5c7]">☎</span>
 
@@ -96,6 +97,7 @@
               </a>
             </li>
 
+            <!-- Email -->
             <li class="flex items-center gap-3">
               <span class="text-[#48d5c7]">✉</span>
 
@@ -107,34 +109,43 @@
               </a>
             </li>
 
+            <!-- Address -->
             <li class="flex items-start gap-3">
-              <span class="text-[#48d5c7]">⌖</span>
+              <span class="mt-0.5 text-[#48d5c7]">⌖</span>
 
-              <span>
-                Maroc
-              </span>
+              <a
+                href="https://www.google.com/maps/place/VOG+CAR/@33.5844919,-7.620359,17z"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="leading-6 transition hover:text-white"
+              >
+                15 rue Anoussour - ex Conflans<br>
+                Quartier Mers Sultan 2<br>
+                Casablanca - Maroc
+              </a>
             </li>
           </ul>
         </div>
 
-        <!-- CTA -->
+        <!-- Address -->
         <div>
           <h3 class="font-bold">
-            Besoin d'un véhicule ?
+            Localisation
           </h3>
-
-          <p class="mt-5 text-sm leading-7 text-white/70">
-            Contactez-nous pour connaître nos disponibilités et effectuer
-            votre demande de réservation.
-          </p>
-
           <a
-            href="tel:0615121097"
-            class="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#008f83] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#00766d]"
+            href="https://www.google.com/maps/place/VOG+CAR/@33.5844919,-7.620359,17z"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#48d5c7] transition hover:text-white"
           >
-            Appeler maintenant
+            Voir sur Google Maps
             <span>→</span>
           </a>
+
+          <p class="mt-5 text-sm leading-6 text-white/50">
+            Ouvert 7 jours / 7<br>
+            De 09:00 à 20:00
+          </p>
         </div>
       </div>
 
