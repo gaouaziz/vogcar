@@ -486,55 +486,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ====================================================== -->
-    <!-- CTA -->
-    <!-- ====================================================== -->
-
-    <section
-      class="bg-[#102a43] py-20 lg:py-24"
-    >
-      <div
-        class="mx-auto max-w-4xl px-6 text-center lg:px-8"
-      >
-        <p
-          class="text-sm font-bold uppercase tracking-[0.2em] text-[#48d5c7]"
-        >
-          Votre prochain déplacement
-        </p>
-
-        <h2
-          class="mt-4 text-3xl font-bold text-white sm:text-4xl"
-        >
-          Prêt à prendre la route ?
-        </h2>
-
-        <p
-          class="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/70"
-        >
-          Découvrez notre parc automobile et trouvez le véhicule
-          adapté à votre prochain déplacement.
-        </p>
-
-        <div
-          class="mt-8 flex flex-col justify-center gap-3 sm:flex-row"
-        >
-          <NuxtLink
-            to="/list-parc"
-            class="inline-flex items-center justify-center rounded-full bg-[#008f83] px-7 py-3.5 text-sm font-bold text-white transition hover:bg-[#00766d]"
-          >
-            Voir notre parc
-          </NuxtLink>
-
-          <NuxtLink
-            to="/contacts"
-            class="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/5 px-7 py-3.5 text-sm font-bold text-white transition hover:bg-white/10"
-          >
-            Nous contacter
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 

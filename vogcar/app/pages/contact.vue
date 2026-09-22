@@ -530,50 +530,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ====================================================== -->
-    <!-- CALL TO ACTION -->
-    <!-- ====================================================== -->
-
-    <section
-      class="bg-[#102a43] py-16"
-    >
-      <div
-        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 text-center sm:flex-row sm:text-left lg:px-8"
-      >
-        <div>
-          <p
-            class="text-sm font-bold uppercase tracking-[0.2em] text-[#48d5c7]"
-          >
-            Besoin d'une réponse rapide ?
-          </p>
-
-          <h2
-            class="mt-2 text-2xl font-bold text-white"
-          >
-            Appelez directement VOG CAR
-          </h2>
-        </div>
-
-        <div
-          class="flex flex-col gap-3 sm:flex-row"
-        >
-          <a
-            href="tel:+212522207459"
-            class="inline-flex items-center justify-center rounded-full bg-[#008f83] px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#00766d]"
-          >
-            05 22 20 74 59
-          </a>
-
-          <a
-            href="tel:+212615121097"
-            class="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-white/10"
-          >
-            06 15 12 10 97
-          </a>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 

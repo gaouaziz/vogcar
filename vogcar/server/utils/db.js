@@ -195,6 +195,26 @@ VALUES
   '2026-09-27',
   'volkswagen-t-roc.png',
   1
+),
+  (
+    '54321-E-26',
+    'Dacia Duster',
+    'SUV abordable et robuste, parfait pour les aventures en famille ou entre amis.',
+    'SUV',
+    'Manuelle',
+    'Essence',
+    5,
+    3,
+    70.00,
+    60.00,
+    5,
+    25000,
+    '2027-03-15',
+    '2027-06-30',
+    '2026-09-22',
+    '2026-09-27',
+    'dacia-duster.png',
+    1
 );
   `)
 

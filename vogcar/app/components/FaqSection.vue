@@ -1,52 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const faqs = [
-  {
-    question: 'Quels sont les documents nécessaires pour louer un véhicule ?',
-    answer:
-      'Vous devez présenter un permis de conduire en cours de validité, une pièce d\'identité (carte d\'identité ou passeport) ainsi qu\'une carte bancaire au nom du conducteur principal pour le dépôt de garantie.'
-  },
-  {
-    question: 'Comment fonctionne la restitution du véhicule à l\'aéroport ?',
-    answer:
-      'Un agent VOG CAR vous accueille directement au point de rendez-vous convenu à votre terminal de départ pour effectuer un état des lieux rapide et récupérer les clés, garantissant un transfert sans stress.'
-  },
-  {
-    question: 'Est-il possible d\'annuler ou modifier une réservation ?',
-    answer:
-      'Oui, les modifications et annulations sont possibles selon les conditions de votre réservation. Nous vous invitons à contacter notre service client au plus tôt afin de réajuster les dates de prise en charge de votre véhicule.'
-  },
-  {
-    question: 'Quel est l\'âge minimum requis pour louer une voiture ?',
-    answer:
-      'L\'âge minimum requis est généralement de 21 ans, avec au moins 1 ou 2 ans de permis de conduire selon la catégorie du véhicule sélectionné.'
-  },
-  {
-    question: 'Le kilométrage est-il illimité ?',
-    answer:
-      'Nos offres incluent différents forfaits kilométriques. Des options avec kilométrage illimité peuvent être proposées selon le véhicule et le contrat choisi.'
-  },
-  {
-    question: 'Que comprend le service d\'assistance VOG CAR ?',
-    answer:
-      'Notre service d\'assistance accompagne les clients en cas d\'imprévu. Les conditions, horaires et services couverts dépendent du contrat choisi. Contactez VOG CAR pour connaître les modalités applicables à votre location.'
-  }
-]
-
-// Gère l'index de la question actuellement ouverte (0 pour la première par défaut)
-const activeIndex = ref<number | null>(0)
-
-// Fonction pour basculer l'ouverture unique
-const toggleFaq = (index: number) => {
-  if (activeIndex.value === index) {
-    activeIndex.value = null // Referme si on clique sur la question déjà ouverte
-  } else {
-    activeIndex.value = index // Ouvre la nouvelle et ferme l'ancienne
-  }
-}
-</script>
-
 <template>
   <section
     id="faq"
@@ -166,3 +117,52 @@ const toggleFaq = (index: number) => {
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const faqs = [
+  {
+    question: 'Quels sont les documents nécessaires pour louer un véhicule ?',
+    answer:
+      'Vous devez présenter un permis de conduire en cours de validité, une pièce d\'identité (carte d\'identité ou passeport) ainsi qu\'une carte bancaire au nom du conducteur principal pour le dépôt de garantie.'
+  },
+  {
+    question: 'Comment fonctionne la restitution du véhicule à l\'aéroport ?',
+    answer:
+      'Un agent VOG CAR vous accueille directement au point de rendez-vous convenu à votre terminal de départ pour effectuer un état des lieux rapide et récupérer les clés, garantissant un transfert sans stress.'
+  },
+  {
+    question: 'Est-il possible d\'annuler ou modifier une réservation ?',
+    answer:
+      'Oui, les modifications et annulations sont possibles selon les conditions de votre réservation. Nous vous invitons à contacter notre service client au plus tôt afin de réajuster les dates de prise en charge de votre véhicule.'
+  },
+  {
+    question: 'Quel est l\'âge minimum requis pour louer une voiture ?',
+    answer:
+      'L\'âge minimum requis est généralement de 21 ans, avec au moins 1 ou 2 ans de permis de conduire selon la catégorie du véhicule sélectionné.'
+  },
+  {
+    question: 'Le kilométrage est-il illimité ?',
+    answer:
+      'Nos offres incluent différents forfaits kilométriques. Des options avec kilométrage illimité peuvent être proposées selon le véhicule et le contrat choisi.'
+  },
+  {
+    question: 'Que comprend le service d\'assistance VOG CAR ?',
+    answer:
+      'Notre service d\'assistance accompagne les clients en cas d\'imprévu. Les conditions, horaires et services couverts dépendent du contrat choisi. Contactez VOG CAR pour connaître les modalités applicables à votre location.'
+  }
+]
+
+// Gère l'index de la question actuellement ouverte (0 pour la première par défaut)
+const activeIndex = ref<number | null>(0)
+
+// Fonction pour basculer l'ouverture unique
+const toggleFaq = (index: number) => {
+  if (activeIndex.value === index) {
+    activeIndex.value = null // Referme si on clique sur la question déjà ouverte
+  } else {
+    activeIndex.value = index // Ouvre la nouvelle et ferme l'ancienne
+  }
+}
+</script>
