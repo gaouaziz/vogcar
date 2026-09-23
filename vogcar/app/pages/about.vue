@@ -497,6 +497,6 @@ useSeoMeta({
   ogTitle: 'À propos de VOG CAR',
   ogDescription:
     'Découvrez VOG CAR et notre approche de la location automobile.',
-  ogImage: '/images/og-vog-car.jpg'
+  ogImage: '/images/vog-car-about.png'
 })
 </script>
