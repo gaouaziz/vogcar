@@ -149,11 +149,21 @@
         </div>
       </div>
 
-      <!-- Bottom -->
-      <div
-        class="mt-12 border-t border-white/10 pt-6 text-center text-sm text-white/50"
-      >
-        © {{ new Date().getFullYear() }} VOG CAR. Tous droits réservés.
+      <!-- Copyright -->
+      <div class="border-t border-white/10 mt-10 pt-6 text-center">
+        <p class="text-sm text-white/50">
+          © {{ new Date().getFullYear() }} VOG CAR. Tous droits réservés.
+          <span class="mx-1">•</span>
+          Developed by
+          <a
+            href="https://www.gaou.online/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-medium text-[#48d5c7] transition hover:text-white"
+          >
+            Aziz Gaou
+          </a>
+        </p>
       </div>
     </div>
   </footer>
