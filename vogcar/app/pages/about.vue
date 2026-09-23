@@ -490,13 +490,23 @@
 </template>
 
 <script setup lang="ts">
+const config = useRuntimeConfig()
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: `${config.public.siteUrl}/about`
+    }
+  ]
+})
 useSeoMeta({
-  title: 'À propos de VOG CAR | Location de voitures',
+  title: 'VOG CAR |  | Location de voitures',
   description:
     'Découvrez VOG CAR, votre partenaire pour la location de voitures. Une gamme de véhicules adaptée à vos besoins, avec un service simple, flexible et professionnel.',
   ogTitle: 'À propos de VOG CAR',
   ogDescription:
     'Découvrez VOG CAR et notre approche de la location automobile.',
-  ogImage: '/images/vog-car-about.png'
+  ogImage: `${config.public.siteUrl}/images/vog-car-about.png`
 })
 </script>

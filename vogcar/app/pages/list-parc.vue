@@ -531,6 +531,7 @@ const closeReservation = () => {
   isReservationOpen.value = false
   selectedCar.value = null
 }
+const config = useRuntimeConfig()
 
 interface Car {
   id: number
@@ -554,8 +555,17 @@ interface Car {
   available: number
 }
 
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: `${config.public.siteUrl}/list-parc`
+    }
+  ]
+})
+
 useSeoMeta({
-  title: 'Liste de parc | VOG CAR',
+  title: 'VOG CAR | Liste de parc',
   description:
     'Découvrez le parc automobile VOG CAR. Citadines, berlines, SUV et véhicules familiaux disponibles à la location.',
   ogTitle: 'Liste de parc | VOG CAR',
