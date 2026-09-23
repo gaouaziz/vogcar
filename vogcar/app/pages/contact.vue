@@ -534,14 +534,24 @@
 </template>
 
 <script setup lang="ts">
+const config = useRuntimeConfig()
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: `${config.public.siteUrl}/contact`
+    }
+  ]
+})
 useSeoMeta({
-  title: 'Contact | VOG CAR - Location de voitures à Casablanca',
+  title: 'VOG CAR | Location de voitures à Casablanca',
   description:
     'Contactez VOG CAR pour vos besoins de location de voitures à Casablanca. Retrouvez notre adresse, nos numéros de téléphone et nos horaires d’ouverture.',
   ogTitle: 'Contactez VOG CAR',
   ogDescription:
     'VOG CAR - Location de voitures à Casablanca. Retrouvez nos coordonnées et contactez-nous.',
-  ogImage: '/images/og-vog-car.jpg'
+  ogImage: `${config.public.siteUrl}/images/og-vog-car.jpg`
 })
 
 // ============================================================

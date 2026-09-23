@@ -18,6 +18,9 @@ export default defineNuxtConfig({
     turso: {
       databaseUrl: '',
       authToken: ''
+    },
+    public: {
+      siteUrl: 'http://localhost:3000'
     }
   },
 
