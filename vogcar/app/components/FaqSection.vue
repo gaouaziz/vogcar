@@ -36,7 +36,7 @@
         >
           Vous souhaitez en savoir plus sur la location de voiture,
           les réservations ou nos services ? Retrouvez ici les réponses
-          aux questions les plus fréquentes concernant VOG CAR.
+          aux questions les plus fréquentes concernant VOGCAR.
         </p>
 
         <!-- FAQ list -->
@@ -164,8 +164,8 @@
           >
             <div class="aspect-[4/5] overflow-hidden">
               <img
-                src="/images/vog-car-keys.png"
-                alt="Location de voiture VOG CAR à Casablanca"
+                :src="`${config.public.mediaUrl}/images/vog-car-keys.png`"
+                alt="Location de voiture VOGCAR à Casablanca"
                 class="h-full w-full object-cover transition duration-700 hover:scale-105"
                 loading="lazy"
                 decoding="async"
@@ -177,7 +177,7 @@
               class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#102a43]/90 via-[#102a43]/40 to-transparent px-6 pb-6 pt-20"
             >
               <p class="text-sm font-medium text-white/80">
-                VOG CAR
+                VOGCAR
               </p>
 
               <p class="mt-1 text-xl font-bold text-white">
@@ -185,44 +185,12 @@
               </p>
             </div>
           </div>
-
-          <!-- Floating information card -->
-          <div
-            class="absolute -bottom-6 left-4 max-w-[250px] rounded-2xl border border-white/80 bg-white p-4 shadow-xl sm:left-8"
-          >
-            <div class="flex items-center gap-3">
-              <div
-                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eefaf8] text-[#008f83]"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-
-              <div>
-                <p class="text-sm font-bold text-[#102a43]">
-                  Disponible 7j/7
-                </p>
-
-                <p class="text-xs text-gray-500">
-                  09:00 — 20:00
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const config = useRuntimeConfig()
+</script>

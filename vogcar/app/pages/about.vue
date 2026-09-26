@@ -10,7 +10,7 @@
       <!-- Background -->
       <div
         class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/vog-car-about-hero.jpg')"
+        :style="`background-image: url(${config.public.mediaUrl}/images/vog-car-about-hero.jpg)`"
       />
 
       <!-- Overlay -->
@@ -26,7 +26,7 @@
           <p
             class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-[#48d5c7]"
           >
-            À propos de VOG CAR
+            À propos de VOGCAR
           </p>
 
           <h1
@@ -41,7 +41,7 @@
           <p
             class="mt-6 max-w-2xl text-base leading-7 text-white/80 sm:text-lg"
           >
-            VOG CAR vous accompagne dans vos déplacements avec une
+            VOGCAR vous accompagne dans vos déplacements avec une
             sélection de véhicules adaptés à vos besoins et un service
             pensé pour rendre la location plus simple et plus sereine.
           </p>
@@ -67,8 +67,8 @@
             class="overflow-hidden rounded-3xl shadow-xl"
           >
             <img
-              src="/images/vog-car-about.jpg"
-              alt="Véhicule VOG CAR"
+              :src="`${config.public.mediaUrl}/images/vog-car-about.jpg`"
+              alt="Véhicule VOGCAR"
               class="h-full w-full object-cover"
               loading="lazy"
               decoding="async"
@@ -101,7 +101,7 @@
             class="mt-6 space-y-4 text-base leading-7 text-gray-600"
           >
             <p>
-              Chez <strong class="text-[#102a43]">VOG CAR</strong>,
+              Chez <strong class="text-[#102a43]">VOGCAR</strong>,
               nous souhaitons proposer une expérience de location
               automobile simple, transparente et adaptée aux besoins
               de chaque client.
@@ -346,7 +346,7 @@
     </section>
 
     <!-- ====================================================== -->
-    <!-- POURQUOI VOG CAR -->
+    <!-- POURQUOI VOGCAR -->
     <!-- ====================================================== -->
 
     <section
@@ -360,7 +360,7 @@
           <p
             class="text-sm font-bold uppercase tracking-[0.2em] text-[#008f83]"
           >
-            Pourquoi VOG CAR ?
+            Pourquoi VOGCAR ?
           </p>
 
           <h2
@@ -459,8 +459,8 @@
             class="overflow-hidden rounded-3xl"
           >
             <img
-              src="/images/vog-car-about-hero.jpg"
-              alt="Véhicule VOG CAR sur la route"
+              :src="`${config.public.mediaUrl}/images/vog-car-about-hero.jpg`"
+              alt="Véhicule VOGCAR sur la route"
               class="h-full w-full object-cover"
               loading="lazy"
               decoding="async"
@@ -474,7 +474,7 @@
             <p
               class="text-xs font-bold uppercase tracking-wide text-[#008f83]"
             >
-              VOG CAR
+              VOGCAR
             </p>
 
             <p
@@ -501,12 +501,21 @@ useHead({
   ]
 })
 useSeoMeta({
-  title: 'VOG CAR |  | Location de voitures',
+  title: 'VOGCAR |  | Location de voitures',
   description:
-    'Découvrez VOG CAR, votre partenaire pour la location de voitures. Une gamme de véhicules adaptée à vos besoins, avec un service simple, flexible et professionnel.',
-  ogTitle: 'À propos de VOG CAR',
+    'VOGCAR, votre partenaire pour la location de voitures à Casablanca. Découvrez nos véhicules et profitez d’un service simple, flexible et professionnel.',
+  ogTitle: 'À propos de VOGCAR',
   ogDescription:
-    'Découvrez VOG CAR et notre approche de la location automobile.',
-  ogImage: `${config.public.siteUrl}/images/vog-car-about.png`
+    'Découvrez VOGCAR et notre approche de la location automobile.',
+  ogType: 'website',
+  ogUrl: `${config.public.siteUrl}/about`,
+  ogImage: `${config.public.mediaUrl}/images/vog-car-about-hero.jpg`,
+  ogImageAlt: 'VOGCAR - Location de voitures à Casablanca',
+
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'VOGCAR | Location de voitures à Casablanca',
+  twitterDescription:
+    'Découvrez VOGCAR et notre approche de la location automobile.',
+  twitterImage: `${config.public.mediaUrl}/images/vog-car-about-hero.jpg`
 })
 </script>

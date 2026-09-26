@@ -9,8 +9,8 @@
       <!-- Image -->
       <div class="relative">
         <img
-          src="/images/vog-car-about.jpg"
-          alt="Véhicules VOG CAR disponibles à la location"
+          :src="`${config.public.mediaUrl}/images/vog-car-about.jpg`"
+          alt="Véhicules VOGCAR disponibles à la location"
           class="w-full rounded-2xl object-cover shadow-xl"
         >
 
@@ -55,7 +55,7 @@
         <p
           class="text-sm font-bold uppercase tracking-[0.2em] text-[#008f83]"
         >
-          À propos de VOG CAR
+          À propos de VOGCAR
         </p>
 
         <h2
@@ -65,7 +65,7 @@
         </h2>
 
         <p class="mt-6 leading-8 text-gray-600">
-          VOG CAR vous propose des solutions de location de voitures
+          VOGCAR vous propose des solutions de location de voitures
           adaptées à vos besoins. Que vous soyez en déplacement professionnel,
           en vacances ou à la recherche d'un véhicule pour vos déplacements
           quotidiens, nous vous accompagnons avec une offre simple et flexible.
@@ -169,3 +169,7 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const config = useRuntimeConfig()
+</script>
