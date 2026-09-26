@@ -96,7 +96,7 @@
                 href="mailto:contact@vogcar.ma"
                 class="transition hover:text-white"
               >
-                contact@vogcar.ma
+                contact@vogcar.site
               </a>
             </li>
 
