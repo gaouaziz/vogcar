@@ -169,10 +169,10 @@
               </a>
 
               <a
-                href="tel:+212615121097"
+                href="tel:+212691711732"
                 class="block text-sm font-semibold text-gray-600 transition hover:text-[#008f83]"
               >
-                06 15 12 10 97
+                06 91 71 17 32
               </a>
             </div>
           </div>
@@ -390,7 +390,7 @@
                 v-model="form.phone"
                 type="tel"
                 required
-                placeholder="06 15 12 10 97"
+                placeholder="06 91 71 17 32"
                 class="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3.5 text-sm outline-none transition placeholder:text-gray-400 focus:border-[#008f83] focus:bg-white focus:ring-2 focus:ring-[#008f83]/10"
               >
             </div>
