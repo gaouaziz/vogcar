@@ -20,22 +20,22 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'VOG CAR | Location de voitures à Casablanca',
+  title: 'VOGCAR | Location de voitures à Casablanca',
   description:
-    'Découvrez VOG CAR, votre partenaire pour la location de voitures à Casablanca. Une gamme de véhicules adaptée à vos besoins, avec un service simple, flexible et professionnel.',
+    'VOGCAR, spécialiste de la location de voitures à Casablanca. Découvrez nos véhicules et profitez d’un service flexible, simple et professionnel.',
 
-  ogTitle: 'VOG CAR | Location de voitures à Casablanca',
+  ogTitle: 'VOGCAR | Location de voitures à Casablanca',
   ogDescription:
-    'Découvrez VOG CAR, votre partenaire pour la location de voitures à Casablanca. Une gamme de véhicules adaptée à vos besoins, avec un service simple, flexible et professionnel.',
+    'Découvrez VOGCAR, votre partenaire pour la location de voitures à Casablanca. Une gamme de véhicules adaptée à vos besoins, avec un service simple, flexible et professionnel.',
   ogType: 'website',
   ogUrl: config.public.siteUrl,
-  ogImage: `${config.public.siteUrl}/images/vog-car-hero.jpg`,
-  ogImageAlt: 'VOG CAR - Location de voitures à Casablanca',
+  ogImage: `${config.public.mediaUrl}/images/vog-car-hero.jpg`,
+  ogImageAlt: 'VOGCAR - Location de voitures à Casablanca',
 
   twitterCard: 'summary_large_image',
-  twitterTitle: 'VOG CAR | Location de voitures à Casablanca',
+  twitterTitle: 'VOGCAR | Location de voitures à Casablanca',
   twitterDescription:
-    'Location de voitures à Casablanca avec VOG CAR. Découvrez notre parc automobile et nos services.',
-  twitterImage: `${config.public.siteUrl}/images/vog-car-hero.jpg`
+    'Location de voitures à Casablanca avec VOGCAR. Découvrez notre parc automobile et nos services.',
+  twitterImage: `${config.public.mediaUrl}/images/vog-car-hero.jpg`
 })
 </script>

@@ -9,7 +9,7 @@
       <!-- Background -->
       <div
         class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/vog-car-list-parc.jpg')"
+        :style="`background-image: url(${config.public.mediaUrl}/images/vog-car-list-parc.jpg)`"
       />
 
       <!-- Overlay -->
@@ -241,7 +241,7 @@
             >
               <img
                 :src="getCarImage(car)"
-                :alt="`${car.name} - VOG CAR`"
+                :alt="`${car.name} - VOGCAR`"
                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 loading="lazy"
                 decoding="async"
@@ -293,6 +293,39 @@
               <div
                 class="mt-5 grid grid-cols-2 gap-x-4 gap-y-4 border-y border-gray-100 py-5"
               >
+                <!-- Year -->
+                <div
+                  class="flex items-center gap-2"
+                >
+                  <div
+                    class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#eefaf8]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 text-[#008f83]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div>
+                    <p class="text-[11px] uppercase tracking-wide text-gray-400">
+                      Année
+                    </p>
+
+                    <p class="text-sm font-semibold text-gray-700">
+                      {{ car.year ?? '—' }}
+                    </p>
+                  </div>
+                </div>
                 <!-- Transmission -->
                 <div
                   class="flex items-center gap-2"
@@ -541,6 +574,7 @@ interface Car {
   category: string
   transmission: 'Manuelle' | 'Automatique'
   fuel: 'Essence' | 'Diesel' | 'Hybride' | 'Électrique'
+  year: number | null
   seats: number | null
   luggage: number | null
   price_per_day: number
@@ -565,13 +599,23 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'VOG CAR | Liste de parc',
+  title: 'VOGCAR | Liste de parc',
   description:
-    'Découvrez le parc automobile VOG CAR. Citadines, berlines, SUV et véhicules familiaux disponibles à la location.',
-  ogTitle: 'Liste de parc | VOG CAR',
+    'Découvrez le parc automobile VOGCAR. Citadines, berlines, SUV et véhicules familiaux disponibles à la location.',
+
+  ogTitle: 'Liste de parc | VOGCAR',
   ogDescription:
-    'Découvrez les véhicules disponibles chez VOG CAR et choisissez celui qui correspond à vos besoins.',
-  ogImage: '/images/og-vog-car.jpg'
+    'Découvrez les véhicules disponibles chez VOGCAR et choisissez celui qui correspond à vos besoins.',
+  ogType: 'website',
+  ogUrl: `${config.public.siteUrl}/list-parc`,
+  ogImage: `${config.public.mediaUrl}/images/vog-car-list-parc.jpg`,
+  ogImageAlt: 'VOGCAR - Location de voitures à Casablanca',
+
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'VOGCAR | Location de voitures à Casablanca',
+  twitterDescription:
+    'Découvrez les véhicules disponibles chez VOGCAR et choisissez celui qui correspond à vos besoins.',
+  twitterImage: `${config.public.mediaUrl}/images/vog-car-list-parc.jpg`
 })
 
 const {
@@ -592,9 +636,9 @@ const formatPrice = (price: number) => {
 
 const getCarImage = (car: Car) => {
   if (!car.image_url) {
-    return '/images/cars/jetour-t2-2026.png'
+    return `${config.public.mediaUrl}/images/cars/vogcar-default.png`
   }
 
-  return `/images/cars/${car.image_url}`
+  return `${config.public.mediaUrl}/images/cars/${car.image_url}`
 }
 </script>

@@ -111,7 +111,7 @@ export default defineEventHandler(async (event) => {
                 font-size: 14px;
               "
             >
-              VOG CAR
+              VOGCAR
             </p>
           </div>
 
@@ -334,7 +334,7 @@ export default defineEventHandler(async (event) => {
           >
             <p style="margin: 0;">
               Cette demande a été envoyée depuis le formulaire de réservation
-              du site VOG CAR.
+              du site VOGCAR.
             </p>
           </div>
 
@@ -349,7 +349,7 @@ export default defineEventHandler(async (event) => {
     // ==========================================
 
     await transporter.sendMail({
-      from: `"VOG CAR" <${config.zohoUser}>`,
+      from: `"VOGCAR" <${config.zohoUser}>`,
       to: 'aziz@gaou.online',
 
       subject: `VogCar - Nouvelle réservation - ${car_name}`,

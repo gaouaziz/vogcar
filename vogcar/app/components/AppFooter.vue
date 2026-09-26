@@ -12,8 +12,8 @@
             class="inline-block"
           >
             <img
-              src="/images/logo-vog-car.png"
-              alt="VOG CAR"
+              :src="`${config.public.mediaUrl}/images/logo-vog-car.png`"
+              alt="VOGCAR"
               class="h-16 w-auto"
             >
           </a>
@@ -51,15 +51,6 @@
 
             <li>
               <a
-                href="/a-propos"
-                class="transition hover:text-[#48d5c7]"
-              >
-                À propos
-              </a>
-            </li>
-
-            <li>
-              <a
                 href="/faq"
                 class="transition hover:text-[#48d5c7]"
               >
@@ -69,7 +60,7 @@
 
             <li>
               <a
-                href="/contacts"
+                href="/contact"
                 class="transition hover:text-[#48d5c7]"
               >
                 Contacts
@@ -90,10 +81,10 @@
               <span class="text-[#48d5c7]">☎</span>
 
               <a
-                href="tel:0615121097"
+                :href="`tel:${config.public.whatsappNumber}`"
                 class="transition hover:text-white"
               >
-                0615 12 10 97
+                {{ config.public.textNumber }}
               </a>
             </li>
 
@@ -152,7 +143,7 @@
       <!-- Copyright -->
       <div class="border-t border-white/10 mt-10 pt-6 text-center">
         <p class="text-sm text-white/50">
-          © {{ new Date().getFullYear() }} VOG CAR. Tous droits réservés.
+          © {{ new Date().getFullYear() }} VOGCAR. Tous droits réservés.
           <span class="mx-1">•</span>
           Developed by
           <a
@@ -168,3 +159,7 @@
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+const config = useRuntimeConfig()
+</script>

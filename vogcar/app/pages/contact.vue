@@ -10,7 +10,7 @@
       <!-- Background -->
       <div
         class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/vog-car-contact-hero.jpg')"
+        :style="`background-image: url(${config.public.mediaUrl}/images/vog-car-contact-hero.jpg)`"
       />
 
       <!-- Overlay -->
@@ -42,7 +42,7 @@
             class="mt-6 max-w-2xl text-base leading-7 text-white/80 sm:text-lg"
           >
             Une question, une demande de réservation ou besoin d'un
-            renseignement ? Notre équipe VOG CAR est à votre écoute.
+            renseignement ? Notre équipe VOGCAR est à votre écoute.
           </p>
         </div>
       </div>
@@ -477,7 +477,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Localisation VOG CAR à Casablanca"
+              title="Localisation VOGCAR à Casablanca"
             />
           </div>
 
@@ -514,7 +514,7 @@
                 <p
                   class="font-bold text-[#102a43]"
                 >
-                  VOG CAR
+                  VOGCAR
                 </p>
 
                 <p
@@ -545,13 +545,22 @@ useHead({
   ]
 })
 useSeoMeta({
-  title: 'VOG CAR | Location de voitures à Casablanca',
+  title: 'VOGCAR | Location de voitures à Casablanca',
   description:
-    'Contactez VOG CAR pour vos besoins de location de voitures à Casablanca. Retrouvez notre adresse, nos numéros de téléphone et nos horaires d’ouverture.',
-  ogTitle: 'Contactez VOG CAR',
+    'Contactez VOGCAR pour vos besoins de location de voitures à Casablanca. Retrouvez notre adresse, nos numéros de téléphone et nos horaires d’ouverture.',
+  ogTitle: 'Contactez VOGCAR',
   ogDescription:
-    'VOG CAR - Location de voitures à Casablanca. Retrouvez nos coordonnées et contactez-nous.',
-  ogImage: `${config.public.siteUrl}/images/og-vog-car.jpg`
+    'VOGCAR - Location de voitures à Casablanca. Retrouvez nos coordonnées et contactez-nous.',
+  ogType: 'website',
+  ogUrl: `${config.public.siteUrl}/contact`,
+  ogImage: `${config.public.mediaUrl}/images/vog-car-contact-hero.jpg`,
+  ogImageAlt: 'VOGCAR - Location de voitures à Casablanca',
+
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'VOGCAR | Contactez Nous',
+  twitterDescription:
+    'Découvrez VOGCAR et notre approche de la location automobile.',
+  twitterImage: `${config.public.mediaUrl}/images/vog-car-about-hero.jpg`
 })
 
 // ============================================================

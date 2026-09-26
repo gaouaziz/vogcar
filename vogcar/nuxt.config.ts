@@ -20,7 +20,10 @@ export default defineNuxtConfig({
       authToken: ''
     },
     public: {
-      siteUrl: 'http://localhost:3000'
+      siteUrl: '',
+      mediaUrl: '',
+      whatsappNumber: '212691711732',
+      textNumber: '0691 71 17 32'
     }
   },
 

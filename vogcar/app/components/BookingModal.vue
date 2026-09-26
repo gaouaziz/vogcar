@@ -271,6 +271,8 @@
 </template>
 
 <script setup lang="ts">
+const config = useRuntimeConfig()
+
 interface Car {
   id: number
   matricule: string
@@ -305,8 +307,8 @@ const errorMessage = ref('')
 
 const getCarImage = (car: Car) => {
   return car.image_url
-    ? `/images/cars/${car.image_url}`
-    : '/images/cars/default-car.jpg'
+    ? `${config.public.mediaUrl}/images/cars/${car.image_url}`
+    : `${config.public.mediaUrl}/images/cars/vogcar-default.png`
 }
 
 const close = () => {
