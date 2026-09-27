@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
-    '@vercel/analytics'
+    '@vercel/analytics',
+    '@vercel/speed-insights'
   ],
 
   devtools: {
