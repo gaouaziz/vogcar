@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   $production: {
     sitemap: {
       siteUrl: 'https://vogcar.site',
-
+      siteName: 'VOGCAR'
       urls: [
         {
           loc: '/',
