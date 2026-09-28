@@ -4,8 +4,43 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/ui',
     '@vercel/analytics',
-    '@vercel/speed-insights'
+    '@vercel/speed-insights',
+    '@nuxtjs/sitemap'
   ],
+
+  $production: {
+    sitemap: {
+      siteUrl: 'https://vogcar.site',
+
+      urls: [
+        {
+          loc: '/',
+          changefreq: 'weekly',
+          priority: 1.0
+        },
+        {
+          loc: '/citroen-ami',
+          changefreq: 'weekly',
+          priority: 0.9
+        },
+        {
+          loc: '/list-parc',
+          changefreq: 'weekly',
+          priority: 0.9
+        },
+        {
+          loc: '/about',
+          changefreq: 'monthly',
+          priority: 0.8
+        },
+        {
+          loc: '/contact',
+          changefreq: 'monthly',
+          priority: 0.8
+        }
+      ]
+    }
+  },
 
   devtools: {
     enabled: true
