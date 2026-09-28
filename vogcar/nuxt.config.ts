@@ -10,9 +10,13 @@ export default defineNuxtConfig({
   ],
 
   $production: {
+
+    robots: {
+      sitemap: 'https://vogcar.site/sitemap.xml'
+    },
     sitemap: {
       siteUrl: 'https://vogcar.site',
-
+      siteName: 'VOGCAR',
       urls: [
         {
           loc: '/',
@@ -40,11 +44,7 @@ export default defineNuxtConfig({
           priority: 0.8
         }
       ]
-    },
-
-    robots: {
-      sitemap: 'https://vogcar.site/sitemap.xml',
-    },
+    }
   },
 
   devtools: {
