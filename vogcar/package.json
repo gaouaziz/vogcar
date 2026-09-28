@@ -15,6 +15,7 @@
     "@iconify-json/simple-icons": "^1.2.95",
     "@libsql/client": "^0.18.0",
     "@nuxt/ui": "^4.11.1",
+    "@nuxtjs/robots": "^6.2.3",
     "@nuxtjs/sitemap": "^8.5.1",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
