@@ -294,6 +294,7 @@
     <!-- ====================================================== -->
 
     <section
+      id="demande-devis"
       class="bg-white py-20 lg:py-28"
     >
       <div
@@ -307,20 +308,21 @@
           <p
             class="text-sm font-bold uppercase tracking-[0.2em] text-[#008f83]"
           >
-            Envoyez-nous un message
+            Demande de devis professionnel
           </p>
 
           <h2
             class="mt-3 text-3xl font-bold text-[#102a43] sm:text-4xl"
           >
-            Comment pouvons-nous vous aider ?
+            Demandez votre devis pro - Réponse en 2h
           </h2>
 
           <p
             class="mt-5 text-base leading-7 text-gray-600"
           >
-            Remplissez le formulaire et notre équipe vous répondra
-            dans les meilleurs délais.
+            VOGCAR - Votre flotte B2B à Casablanca. Vous êtes une marque, une agence
+            marketing ou une agence de voyage ? Remplissez ce formulaire en 60 secondes.
+            On vous envoie le prix, la dispo et le mode de fonctionnement.
           </p>
 
           <!-- Success message -->
