@@ -39,7 +39,11 @@ export default defineNuxtConfig({
           priority: 0.8
         }
       ]
-    }
+    },
+
+    robots: {
+      sitemap: 'https://vogcar.site/sitemap.xml',
+    },
   },
 
   devtools: {
