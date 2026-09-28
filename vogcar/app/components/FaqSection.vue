@@ -39,73 +39,6 @@
           aux questions les plus fréquentes concernant VOGCAR.
         </p>
 
-        <!-- FAQ list -->
-        <div class="mt-8 space-y-3">
-          <div
-            v-for="(faq, index) in faqs"
-            :key="faq.question"
-            class="overflow-hidden rounded-2xl border bg-white transition-all duration-300"
-            :class="
-              activeIndex === index
-                ? 'border-[#008f83]/40 shadow-lg shadow-[#008f83]/5'
-                : 'border-gray-200 shadow-sm hover:border-[#008f83]/30 hover:shadow-md'
-            "
-          >
-            <!-- Question -->
-            <button
-              type="button"
-              class="flex w-full items-center justify-between gap-5 px-5 py-5 text-left outline-none sm:px-6"
-              :aria-expanded="activeIndex === index"
-              @click="toggleFaq(index)"
-            >
-              <span
-                class="text-sm font-bold leading-6 text-[#102a43] sm:text-base"
-              >
-                {{ faq.question }}
-              </span>
-
-              <!-- Arrow -->
-              <span
-                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-all duration-300"
-                :class="
-                  activeIndex === index
-                    ? 'bg-[#008f83] text-white'
-                    : 'bg-[#eefaf8] text-[#008f83]'
-                "
-                aria-hidden="true"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-4 w-4 transition-transform duration-300"
-                  :class="{ 'rotate-180': activeIndex === index }"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </span>
-            </button>
-
-            <!-- Answer -->
-            <div
-              v-show="activeIndex === index"
-              class="border-t border-gray-100"
-            >
-              <p
-                class="px-5 pb-5 pt-4 text-sm leading-7 text-gray-600 sm:px-6"
-              >
-                {{ faq.answer }}
-              </p>
-            </div>
-          </div>
-        </div>
-
         <!-- Bottom contact -->
         <div
           class="mt-8 flex flex-col gap-4 rounded-2xl border border-[#008f83]/15 bg-white p-5 shadow-sm sm:flex-row sm:items-center sm:justify-between"
@@ -121,7 +54,7 @@
           </div>
 
           <NuxtLink
-            to="/contacts"
+            to="/contact"
             class="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-[#008f83] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#00766d]"
           >
             Nous contacter

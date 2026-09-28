@@ -5,7 +5,9 @@
     <div
       class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8"
     >
+      <!-- ========================================================= -->
       <!-- Logo -->
+      <!-- ========================================================= -->
       <NuxtLink
         to="/"
         class="flex items-center"
@@ -13,13 +15,16 @@
       >
         <img
           :src="`${config.public.mediaUrl}/images/logo-vog-car.png`"
-          alt="VOGCAR - Location de voitures"
+          alt="VOG CAR - Location de voitures"
           class="h-14 w-auto"
         >
       </NuxtLink>
 
+      <!-- ========================================================= -->
       <!-- Desktop navigation -->
-      <nav class="hidden items-center gap-8 lg:flex">
+      <!-- ========================================================= -->
+      <nav class="hidden items-center gap-7 lg:flex">
+        <!-- Accueil -->
         <NuxtLink
           to="/"
           class="py-7 text-sm transition hover:text-[#008f83]"
@@ -28,6 +33,7 @@
           Accueil
         </NuxtLink>
 
+        <!-- Liste de parc -->
         <NuxtLink
           to="/list-parc"
           class="py-7 text-sm transition hover:text-[#008f83]"
@@ -36,6 +42,143 @@
           Liste de parc
         </NuxtLink>
 
+        <!-- ===================================================== -->
+        <!-- Nos solutions -->
+        <!-- ===================================================== -->
+        <div
+          class="relative"
+          @mouseenter="isSolutionsOpen = true"
+          @mouseleave="isSolutionsOpen = false"
+        >
+          <button
+            type="button"
+            class="flex items-center gap-1 py-7 text-sm transition hover:text-[#008f83]"
+            :class="
+              isSolutionsActive
+                ? 'font-semibold text-[#008f83]'
+                : 'text-[#102a43]'
+            "
+            aria-haspopup="true"
+            :aria-expanded="isSolutionsOpen"
+            @click="toggleSolutions"
+          >
+            <span>Nos solutions</span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 transition-transform duration-200"
+              :class="{ 'rotate-180': isSolutionsOpen }"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown -->
+          <Transition
+            enter-active-class="transition duration-150 ease-out"
+            enter-from-class="translate-y-2 opacity-0"
+            enter-to-class="translate-y-0 opacity-100"
+            leave-active-class="transition duration-100 ease-in"
+            leave-from-class="translate-y-0 opacity-100"
+            leave-to-class="translate-y-2 opacity-0"
+          >
+            <div
+              v-if="isSolutionsOpen"
+              class="absolute left-1/2 top-full w-72 -translate-x-1/2 rounded-2xl border border-gray-100 bg-white p-2 shadow-xl"
+            >
+              <!-- Dropdown arrow -->
+              <div
+                class="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 border-l border-t border-gray-100 bg-white"
+              />
+
+              <!-- Citroën Ami -->
+              <NuxtLink
+                to="/citroen-ami"
+                class="group relative z-10 flex items-center gap-3 rounded-xl px-4 py-3.5 transition hover:bg-[#eefaf8]"
+                @click="closeMenu"
+              >
+                <div
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eefaf8] text-[#008f83] transition group-hover:bg-[#008f83] group-hover:text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 17h14M7 17a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4zM5 13l1.5-5h11L20 13M8 8l1-3h6l1 3"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <p
+                    class="text-sm font-semibold text-[#102a43] transition group-hover:text-[#008f83]"
+                  >
+                    Citroën Ami
+                  </p>
+
+                  <p class="mt-0.5 text-xs text-gray-500">
+                    Publicité mobile
+                  </p>
+                </div>
+              </NuxtLink>
+
+              <!-- Fiat Scudo -->
+              <!-- <NuxtLink
+                to="/fiat-scudo"
+                class="group relative z-10 flex items-center gap-3 rounded-xl px-4 py-3.5 transition hover:bg-[#eefaf8]"
+                @click="closeMenu"
+              >
+                <div
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eefaf8] text-[#008f83] transition group-hover:bg-[#008f83] group-hover:text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 17h18M5 17V8a2 2 0 012-2h8l4 4v7M8 17a2 2 0 100-4 2 2 0 000 4zm9 0a2 2 0 100-4 2 2 0 000 4z"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <p
+                    class="text-sm font-semibold text-[#102a43] transition group-hover:text-[#008f83]"
+                  >
+                    Fiat Scudo
+                  </p>
+
+                  <p class="mt-0.5 text-xs text-gray-500">
+                    Transport de groupe
+                  </p>
+                </div>
+              </NuxtLink> -->
+            </div>
+          </Transition>
+        </div>
+
+        <!-- À propos -->
         <NuxtLink
           to="/about"
           class="py-7 text-sm transition hover:text-[#008f83]"
@@ -44,6 +187,7 @@
           À propos
         </NuxtLink>
 
+        <!-- Contacts -->
         <NuxtLink
           to="/contact"
           class="py-7 text-sm transition hover:text-[#008f83]"
@@ -53,8 +197,10 @@
         </NuxtLink>
       </nav>
 
+      <!-- ========================================================= -->
       <!-- Desktop right section -->
-      <div class="hidden items-center gap-6 sm:flex">
+      <!-- ========================================================= -->
+      <div class="hidden items-center gap-5 xl:flex">
         <!-- Price -->
         <div class="text-right leading-tight">
           <span
@@ -67,9 +213,10 @@
             À partir de
 
             <span
-              class="whitespace-nowrap text-lg font-extrabold text-[#008f83] xl:text-xl"
+              class="whitespace-nowrap text-lg font-extrabold text-[#008f83]"
             >
               199 Dh
+
               <span class="text-xs font-semibold text-[#102a43]/70">
                 /jour
               </span>
@@ -77,8 +224,9 @@
           </p>
         </div>
 
-        <!-- Avatar + Contact buttons -->
+        <!-- Avatar + contact -->
         <div class="flex items-center gap-3">
+          <!-- Avatar -->
           <img
             :src="`${config.public.mediaUrl}/images/aziz-gaou.png`"
             alt="Aziz Gaou"
@@ -87,10 +235,11 @@
 
           <!-- Phone -->
           <a
-            :href="`tel:${config.public.whatsappNumber}`"
-            aria-label="Appeler VOGCAR"
+            :href="`tel:${config.public.phoneNumber}`"
+            aria-label="Appeler VOG CAR"
             class="flex items-center gap-2 rounded-full bg-[#008f83] px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#00766d]"
           >
+            <!-- Phone icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-4 w-4"
@@ -106,15 +255,17 @@
               />
             </svg>
 
-            <span>{{ config.public.textNumber }}</span>
+            <span>
+              {{ config.public.textNumber }}
+            </span>
           </a>
 
           <!-- WhatsApp -->
           <a
-            href="https://wa.me/212691711732"
+            :href="`https://wa.me/${config.public.whatsappNumber}`"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Contacter VOGCAR sur WhatsApp"
+            aria-label="Contacter VOG CAR sur WhatsApp"
             class="flex h-11 w-11 items-center justify-center rounded-full bg-[#25D366] text-white shadow-sm transition hover:bg-[#1ebe5d]"
           >
             <svg
@@ -132,7 +283,9 @@
         </div>
       </div>
 
+      <!-- ========================================================= -->
       <!-- Mobile menu button -->
+      <!-- ========================================================= -->
       <button
         type="button"
         class="flex h-11 w-11 items-center justify-center rounded-xl bg-[#eefaf8] text-[#102a43] transition hover:bg-[#008f83] hover:text-white lg:hidden"
@@ -177,7 +330,9 @@
       </button>
     </div>
 
+    <!-- =========================================================== -->
     <!-- MOBILE MENU -->
+    <!-- =========================================================== -->
     <Transition
       enter-active-class="transition duration-200 ease-out"
       enter-from-class="translate-y-[-10px] opacity-0"
@@ -193,6 +348,7 @@
       >
         <nav class="mx-auto max-w-7xl px-6 py-5">
           <div class="flex flex-col gap-1">
+            <!-- Accueil -->
             <NuxtLink
               to="/"
               class="rounded-xl px-4 py-3.5 text-sm font-semibold text-[#102a43] transition hover:bg-[#eefaf8] hover:text-[#008f83]"
@@ -202,6 +358,7 @@
               Accueil
             </NuxtLink>
 
+            <!-- Liste de parc -->
             <NuxtLink
               to="/list-parc"
               class="rounded-xl px-4 py-3.5 text-sm font-semibold text-[#102a43] transition hover:bg-[#eefaf8] hover:text-[#008f83]"
@@ -211,6 +368,131 @@
               Liste de parc
             </NuxtLink>
 
+            <!-- ================================================= -->
+            <!-- Nos solutions - Mobile -->
+            <!-- ================================================= -->
+            <div>
+              <button
+                type="button"
+                class="flex w-full items-center justify-between rounded-xl px-4 py-3.5 text-sm font-semibold text-[#102a43] transition hover:bg-[#eefaf8] hover:text-[#008f83]"
+                :class="
+                  isSolutionsOpen
+                    ? 'bg-[#eefaf8] text-[#008f83]'
+                    : ''
+                "
+                :aria-expanded="isSolutionsOpen"
+                @click="toggleSolutions"
+              >
+                <span>Nos solutions</span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 transition-transform duration-200"
+                  :class="{ 'rotate-180': isSolutionsOpen }"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <!-- Mobile submenu -->
+              <Transition
+                enter-active-class="transition duration-150 ease-out"
+                enter-from-class="translate-y-[-5px] opacity-0"
+                enter-to-class="translate-y-0 opacity-100"
+                leave-active-class="transition duration-100 ease-in"
+                leave-from-class="translate-y-0 opacity-100"
+                leave-to-class="translate-y-[-5px] opacity-0"
+              >
+                <div
+                  v-if="isSolutionsOpen"
+                  class="mt-1 space-y-1 pl-4"
+                >
+                  <!-- Citroën Ami -->
+                  <NuxtLink
+                    to="/citroen-ami"
+                    class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm text-[#102a43] transition hover:bg-[#eefaf8] hover:text-[#008f83]"
+                    active-class="bg-[#eefaf8] font-semibold text-[#008f83]"
+                    @click="closeMenu"
+                  >
+                    <span
+                      class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#eefaf8] text-[#008f83]"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M5 17h14M7 17a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4zM5 13l1.5-5h11L20 13M8 8l1-3h6l1 3"
+                        />
+                      </svg>
+                    </span>
+
+                    <span>
+                      <span class="block font-semibold">
+                        Citroën Ami
+                      </span>
+
+                      <span class="block text-xs text-gray-500">
+                        Publicité mobile
+                      </span>
+                    </span>
+                  </NuxtLink>
+
+                  <!-- Fiat Scudo -->
+                  <!-- <NuxtLink
+                    to="/fiat-scudo"
+                    class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm text-[#102a43] transition hover:bg-[#eefaf8] hover:text-[#008f83]"
+                    active-class="bg-[#eefaf8] font-semibold text-[#008f83]"
+                    @click="closeMenu"
+                  >
+                    <span
+                      class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#eefaf8] text-[#008f83]"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M3 17h18M5 17V8a2 2 0 012-2h8l4 4v7M8 17a2 2 0 100-4 2 2 0 000 4zm9 0a2 2 0 100-4 2 2 0 000 4z"
+                        />
+                      </svg>
+                    </span>
+
+                    <span>
+                      <span class="block font-semibold">
+                        Fiat Scudo
+                      </span>
+
+                      <span class="block text-xs text-gray-500">
+                        Transport de groupe
+                      </span>
+                    </span>
+                  </NuxtLink> -->
+                </div>
+              </Transition>
+            </div>
+
+            <!-- À propos -->
             <NuxtLink
               to="/about"
               class="rounded-xl px-4 py-3.5 text-sm font-semibold text-[#102a43] transition hover:bg-[#eefaf8] hover:text-[#008f83]"
@@ -220,6 +502,7 @@
               À propos
             </NuxtLink>
 
+            <!-- Contacts -->
             <NuxtLink
               to="/contact"
               class="rounded-xl px-4 py-3.5 text-sm font-semibold text-[#102a43] transition hover:bg-[#eefaf8] hover:text-[#008f83]"
@@ -230,7 +513,9 @@
             </NuxtLink>
           </div>
 
+          <!-- ================================================= -->
           <!-- Mobile contact buttons -->
+          <!-- ================================================= -->
           <div class="mt-4 space-y-2 border-t border-gray-100 pt-4">
             <!-- Phone -->
             <a
@@ -254,7 +539,9 @@
                 />
               </svg>
 
-              <span>Appeler : {{ config.public.textNumber }}</span>
+              <span>
+                Appeler : {{ config.public.textNumber }}
+              </span>
             </a>
 
             <!-- WhatsApp -->
@@ -278,7 +565,9 @@
                 />
               </svg>
 
-              <span>WhatsApp : {{ config.public.textNumber }}</span>
+              <span>
+                WhatsApp : {{ config.public.textNumber }}
+              </span>
             </a>
           </div>
         </nav>
@@ -288,16 +577,36 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
+
+const config = useRuntimeConfig()
 
 const isMenuOpen = ref(false)
-const config = useRuntimeConfig()
+const isSolutionsOpen = ref(false)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
+
+  if (!isMenuOpen.value) {
+    isSolutionsOpen.value = false
+  }
+}
+
+const toggleSolutions = () => {
+  isSolutionsOpen.value = !isSolutionsOpen.value
 }
 
 const closeMenu = () => {
   isMenuOpen.value = false
+  isSolutionsOpen.value = false
 }
+
+const route = useRoute()
+
+const isSolutionsActive = computed(() => {
+  return (
+    route.path === '/citroen-ami'
+    || route.path === '/fiat-scudo'
+  )
+})
 </script>
