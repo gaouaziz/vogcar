@@ -21,6 +21,7 @@
     "@vercel/speed-insights": "^2.0.0",
     "nodemailer": "^10.0.10",
     "nuxt": "^4.5.2",
+    "swiper": "^14.3.0",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
