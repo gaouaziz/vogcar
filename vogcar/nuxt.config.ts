@@ -30,7 +30,14 @@ export default defineNuxtConfig({
         {
           loc: '/citroen-ami',
           changefreq: 'weekly',
-          priority: 0.9
+          priority: 0.9,
+          images: [
+            {
+              loc: `${process.env.SITE_URL}/images/citroen-ami-hero.jpg?v=1.0`,
+              title: 'Citroën Ami Publicité Mobile Casablanca',
+              caption: 'Flotte de Citroën Ami électriques pour campagne publicitaire'
+            }
+          ]
         },
         {
           loc: '/list-parc',
