@@ -14,6 +14,7 @@
     "@iconify-json/lucide": "^1.2.131",
     "@iconify-json/simple-icons": "^1.2.95",
     "@libsql/client": "^0.18.0",
+    "@nuxt/image": "^2.1.0",
     "@nuxt/ui": "^4.11.1",
     "@nuxtjs/robots": "^6.2.3",
     "@nuxtjs/sitemap": "^8.5.1",
