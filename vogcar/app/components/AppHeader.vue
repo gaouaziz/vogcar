@@ -138,7 +138,7 @@
               </NuxtLink>
 
               <!-- Fiat Scudo -->
-              <!-- <NuxtLink
+              <NuxtLink
                 to="/fiat-scudo"
                 class="group relative z-10 flex items-center gap-3 rounded-xl px-4 py-3.5 transition hover:bg-[#eefaf8]"
                 @click="closeMenu"
@@ -173,7 +173,7 @@
                     Transport de groupe
                   </p>
                 </div>
-              </NuxtLink> -->
+              </NuxtLink>
             </div>
           </Transition>
         </div>
@@ -453,7 +453,7 @@
                   </NuxtLink>
 
                   <!-- Fiat Scudo -->
-                  <!-- <NuxtLink
+                  <NuxtLink
                     to="/fiat-scudo"
                     class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm text-[#102a43] transition hover:bg-[#eefaf8] hover:text-[#008f83]"
                     active-class="bg-[#eefaf8] font-semibold text-[#008f83]"
@@ -487,7 +487,7 @@
                         Transport de groupe
                       </span>
                     </span>
-                  </NuxtLink> -->
+                  </NuxtLink>
                 </div>
               </Transition>
             </div>

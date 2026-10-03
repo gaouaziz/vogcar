@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@vercel/analytics',
     '@vercel/speed-insights',
+    '@nuxt/image',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots'
   ],
@@ -12,11 +13,14 @@ export default defineNuxtConfig({
   $production: {
 
     robots: {
-      sitemap: 'https://vogcar.site/sitemap.xml'
+      sitemap: `${process.env.SITE_URL}/sitemap.xml`
     },
     sitemap: {
-      siteUrl: 'https://vogcar.site',
+      siteUrl: process.env.SITE_URL,
       siteName: 'VOGCAR',
+      exclude: [
+        '/tv'
+      ],
       urls: [
         {
           loc: '/',
@@ -40,6 +44,16 @@ export default defineNuxtConfig({
         },
         {
           loc: '/contact',
+          changefreq: 'monthly',
+          priority: 0.8
+        },
+        {
+          loc: '/fiat-scudo',
+          changefreq: 'monthly',
+          priority: 0.8
+        },
+        {
+          loc: '/citroen-ami',
           changefreq: 'monthly',
           priority: 0.8
         }
