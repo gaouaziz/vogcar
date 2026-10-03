@@ -57,13 +57,15 @@ export default defineNuxtConfig({
         {
           loc: '/fiat-scudo',
           changefreq: 'monthly',
-          priority: 0.8
+          priority: 0.8,
+          images: [
+            {
+              loc: `${process.env.SITE_URL}/images/fiat-scudo-hero.jpg`,
+              title: 'Fiat Scudo Automatique 2025 Aéroport Casablanca',
+              caption: 'Location Fiat Scudo automatique 2025 à Casablanca, 1 + 8 places. Idéal pour agences de tourisme, transferts aéroport, voyages et transport de groupes.'
+            }
+          ]
         },
-        {
-          loc: '/citroen-ami',
-          changefreq: 'monthly',
-          priority: 0.8
-        }
       ]
     }
   },
