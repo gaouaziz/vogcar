@@ -288,27 +288,6 @@ VALUES
     1
 ),
 (
-    '987456-G-26',
-    'Volkswagen Tiguan',
-    'Offrez-vous le confort et le prestige d un grand SUV allemand pour votre séjour. Réservez votre Tiguan dès aujourd hui !',
-    'SUV',
-    2023,
-    'Automatique',
-    'Diesel',
-    5,
-    2,
-    500.00,
-    500.00,
-    5,
-    15000,
-    '2027-01-10',
-    '2027-04-15',
-    '2026-09-22',
-    '2026-09-27',
-    'volkswagen-tiguan-2023-automatique.png',
-    1
-),
-(
     '654732-G-26',
     'Volkswagen Tiguan',
     'Élégant, puissant et spacieux, ce SUV haut de gamme est le compagnon idéal pour vos déplacements d affaires ou vos voyages en famille à travers le Maroc.',
