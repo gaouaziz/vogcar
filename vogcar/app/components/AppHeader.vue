@@ -174,6 +174,44 @@
                   </p>
                 </div>
               </NuxtLink>
+
+              <!-- Renault Express -->
+              <NuxtLink
+                to="/renault-express"
+                class="group relative z-10 flex items-center gap-3 rounded-xl px-4 py-3.5 transition hover:bg-[#eefaf8]"
+                @click="closeMenu"
+              >
+                <div
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eefaf8] text-[#008f83] transition group-hover:bg-[#008f83] group-hover:text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h3.515a1 1 0 0 0 .93-.63l1.171-3.123A1 1 0 0 0 21 14.25v-3a1 1 0 0 0-1-1h-4.32a1 1 0 0 1-.832-.445L13.14 7.27A1 1 0 0 0 12.31 6.75H3.75a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h4.5"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <p
+                    class="text-sm font-semibold text-[#102a43] transition group-hover:text-[#008f83]"
+                  >
+                    Renault Express
+                  </p>
+
+                  <p class="mt-0.5 text-xs text-gray-500">
+                    Transport de marchandises
+                  </p>
+                </div>
+              </NuxtLink>
             </div>
           </Transition>
         </div>
@@ -235,7 +273,7 @@
 
           <!-- Phone -->
           <a
-            :href="`tel:${config.public.phoneNumber}`"
+            :href="`tel:${config.public.whatsappNumber}`"
             aria-label="Appeler VOG CAR"
             class="flex items-center gap-2 rounded-full bg-[#008f83] px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#00766d]"
           >
