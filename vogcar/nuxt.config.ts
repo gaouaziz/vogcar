@@ -79,7 +79,7 @@ export default defineNuxtConfig({
           priority: 0.8,
           images: [
             {
-              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/renault-express-hero.jpg?v=1.0`,
+              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/renault-express-hero.png?v=1.0`,
               title: 'Location Renault Express 2025 au Maroc | VOG CAR',
               caption: 'Location de Renault Express 2025 à Casablanca et au Maroc. Idéal pour vos livraisons urbaines, grossistes, commerçants et e-commerce.'
             }
