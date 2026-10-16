@@ -118,5 +118,11 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  sitemap: {
+    xsl: false,
+    credits: false,
+    cacheMaxAgeSeconds: 0
   }
 })
