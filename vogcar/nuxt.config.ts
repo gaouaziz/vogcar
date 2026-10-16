@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     sitemap: {
       siteUrl: process.env.SITE_URL,
       siteName: 'VOGCAR',
+      xls: false,
       exclude: [
         '/tv'
       ],
