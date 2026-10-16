@@ -34,7 +34,7 @@ export default defineNuxtConfig({
           priority: 0.9,
           images: [
             {
-              loc: `${process.env.SITE_URL}/images/citroen-ami-hero.jpg?v=1.0`,
+              loc: `${process.env.MEDIA_URL}/images/citroen-ami-hero.jpg?v=1.0`,
               title: 'Citroën Ami Publicité Mobile Casablanca',
               caption: 'Flotte de Citroën Ami électriques pour campagne publicitaire'
             }
@@ -61,7 +61,7 @@ export default defineNuxtConfig({
           priority: 0.8,
           images: [
             {
-              loc: `${process.env.SITE_URL}/images/fiat-scudo-hero.jpg`,
+              loc: `${process.env.MEDIA_URL}/images/fiat-scudo-hero.jpg`,
               title: 'Fiat Scudo Automatique 2025 Aéroport Casablanca',
               caption: 'Location Fiat Scudo automatique 2025 à Casablanca, 1 + 8 places. Idéal pour agences de tourisme, transferts aéroport, voyages et transport de groupes.'
             }
@@ -73,7 +73,7 @@ export default defineNuxtConfig({
           priority: 0.8,
           images: [
             {
-              loc: `${process.env.SITE_URL}/images/renault-express-hero.jpg`,
+              loc: `${process.env.MEDIA_URL}/images/renault-express-hero.jpg`,
               title: 'Location Renault Express 2025 au Maroc | VOG CAR',
               caption: 'Location de Renault Express 2025 à Casablanca et au Maroc. Idéal pour vos livraisons urbaines, grossistes, commerçants et e-commerce.'
             }
