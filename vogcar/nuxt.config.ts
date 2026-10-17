@@ -41,6 +41,18 @@ export default defineNuxtConfig({
           ]
         },
         {
+          loc: '/location-voiture-aeroport-casablanca',
+          changefreq: 'weekly',
+          priority: 0.9,
+          images: [
+            {
+              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/location-voiture-aeroport-casablanca.png`,
+              title: 'Location Voiture Aéroport Casablanca | VOG CAR',
+              caption: 'Large choix de véhicules de location à l’aéroport de Casablanca : citadines, SUV et utilitaires adaptés à votre budget.'
+            }
+          ]
+        },
+        {
           loc: '/list-parc',
           changefreq: 'weekly',
           priority: 0.9
