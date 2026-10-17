@@ -10,12 +10,6 @@ export default defineNuxtConfig({
     '@nuxtjs/robots'
   ],
 
-  sitemap: {
-    xsl: false,
-    credits: false,
-    cacheMaxAgeSeconds: 0
-  },
-
   $production: {
 
     robots: {
@@ -35,14 +29,14 @@ export default defineNuxtConfig({
           priority: 1.0
         },
         {
-          loc: '/citroen-ami',
+          loc: '/location-voiture-casablanca',
           changefreq: 'weekly',
           priority: 0.9,
           images: [
             {
-              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/citroen-ami-hero.jpg?v=1.0`,
-              title: 'Citroën Ami Publicité Mobile Casablanca',
-              caption: 'Flotte de Citroën Ami électriques pour campagne publicitaire'
+              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/location-voiture-casablanca.png`,
+              title: 'Location Voiture Casablanca | VOG CAR',
+              caption: 'Large choix de véhicules de location à Casablanca : citadines, SUV et utilitaires adaptés à votre budget.'
             }
           ]
         },
@@ -82,6 +76,18 @@ export default defineNuxtConfig({
               loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/renault-express-hero.png?v=1.0`,
               title: 'Location Renault Express 2025 au Maroc | VOG CAR',
               caption: 'Location de Renault Express 2025 à Casablanca et au Maroc. Idéal pour vos livraisons urbaines, grossistes, commerçants et e-commerce.'
+            }
+          ]
+        },
+        {
+          loc: '/citroen-ami',
+          changefreq: 'weekly',
+          priority: 0.9,
+          images: [
+            {
+              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/citroen-ami-hero.jpg?v=1.0`,
+              title: 'Citroën Ami Publicité Mobile Casablanca',
+              caption: 'Flotte de Citroën Ami électriques pour campagne publicitaire'
             }
           ]
         }
@@ -124,5 +130,11 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  sitemap: {
+    xsl: false,
+    credits: false,
+    cacheMaxAgeSeconds: 0
   }
 })
