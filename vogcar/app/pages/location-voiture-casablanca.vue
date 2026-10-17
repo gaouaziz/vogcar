@@ -276,7 +276,7 @@
           </div>
 
           <NuxtLink
-            to="/contacts"
+            to="/contact"
             class="mt-8 inline-flex rounded-xl bg-[#008f83] px-7 py-4 font-bold text-white transition hover:bg-[#00766d]"
           >
             Contacter VOG CAR
@@ -332,7 +332,7 @@
         </div>
 
         <NuxtLink
-          to="/contacts"
+          to="/contact"
           class="inline-flex items-center justify-center rounded-xl bg-[#48d5c7] px-7 py-4 font-bold text-[#003f3b] transition hover:bg-white"
         >
           Préparer mon déplacement
@@ -474,7 +474,7 @@
           </NuxtLink>
 
           <NuxtLink
-            to="/contacts"
+            to="/contact"
             class="rounded-xl border border-white/50 px-7 py-4 font-bold text-white transition hover:bg-white/10"
           >
             Nous contacter
