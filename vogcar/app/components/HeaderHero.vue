@@ -16,22 +16,22 @@
         <p
           class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-[#48d5c7]"
         >
-          Location de voitures
+          Location de voitures au Maroc
         </p>
 
         <h1
           class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl"
         >
-          Votre voiture de location
+          Location de voiture à Casablanca
           <span class="text-[#48d5c7]">
             en toute confiance
           </span>
         </h1>
 
         <p class="mt-6 max-w-2xl text-lg leading-8 text-white">
-          Découvrez une solution simple et pratique pour louer votre voiture.
-          VOGCAR vous accompagne pour vos déplacements professionnels,
-          personnels et vos transferts depuis l'aéroport.
+          Découvrez une solution simple et pratique pour louer votre voiture à Casablanca.
+          <strong>VOGCAR</strong> vous accompagne pour vos déplacements professionnels,
+          personnels et l'organisation de vos transferts depuis l'aéroport Mohammed V.
         </p>
       </div>
 

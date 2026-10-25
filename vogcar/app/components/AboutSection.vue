@@ -65,15 +65,18 @@
         </h2>
 
         <p class="mt-6 leading-8 text-gray-600">
-          VOGCAR vous propose des solutions de location de voitures
-          adaptées à vos besoins. Que vous soyez en déplacement professionnel,
-          en vacances ou à la recherche d'un véhicule pour vos déplacements
-          quotidiens, nous vous accompagnons avec une offre simple et flexible.
+          Spécialiste de la <strong>location de voiture à Casablanca</strong>,
+          <strong>VOGCAR</strong> vous propose des solutions de mobilité simples,
+          flexibles et adaptées à tous vos besoins. Que vous soyez de passage au
+          Maroc pour un déplacement professionnel, des vacances en famille ou
+          simplement à la recherche d'un véhicule pour vos trajets quotidiens en ville,
+          notre agence vous accompagne à chaque étape.
         </p>
 
         <p class="mt-4 leading-8 text-gray-600">
-          Notre objectif est de vous permettre de réserver votre véhicule
-          facilement et de profiter d'un service adapté à vos attentes.
+          Notre objectif est de vous permettre de réserver votre véhicule en ligne
+          facilement et au meilleur tarif, tout en profitant d'un service de confiance
+          entièrement pensé pour votre confort.
         </p>
 
         <!-- Features -->
