@@ -15,11 +15,11 @@
         <h2
           class="mt-3 text-3xl font-bold text-[#102a43] sm:text-4xl"
         >
-          Des solutions adaptées à vos besoins
+          Votre agence de location de voiture à Casablanca
         </h2>
 
         <p class="mt-4 leading-7 text-gray-600">
-          Découvrez nos services complets conçus pour faciliter vos déplacements, maximiser votre confort et garantir une expérience de location fluide et sereine.
+          Découvrez des services sur-mesure conçus pour faciliter vos déplacements au Maroc, maximiser votre confort et vous garantir une expérience de location de véhicule fluide, transparente et sereine.
         </p>
       </div>
 
@@ -49,11 +49,11 @@
           </div>
 
           <h3 class="mt-6 text-xl font-bold text-[#102a43]">
-            Service Aéroport
+            Location de voiture à l'Aéroport de Casablanca
           </h3>
 
           <p class="mt-3 text-sm leading-6 text-gray-600">
-            Simplifiez vos arrivées et départs grâce à notre prise en charge directe aux terminaux. Nous suivons l'état de votre vol en temps réel afin de garantir la mise à disposition immédiate de votre véhicule dès votre atterrissage, même en cas de retard, vous évitant ainsi de longues files d'attente.
+            Simplifiez vos arrivées et départs grâce à notre service de livraison directe de voiture à l'aéroport Mohammed V (CMN). Nous suivons votre vol en temps réel afin de garantir la mise à disposition immédiate de votre véhicule dès votre atterrissage.
           </p>
         </article>
 
@@ -81,11 +81,11 @@
           </div>
 
           <h3 class="mt-6 text-xl font-bold text-[#102a43]">
-            Location avec Chauffeur
+            Location avec Chauffeur Privé
           </h3>
 
           <p class="mt-3 text-sm leading-6 text-gray-600">
-            Installez-vous confortablement et laissez-vous conduire par nos chauffeurs professionnels et bilingues. Idéale pour vos rendez-vous professionnels, vos événements privés ou vos circuits touristiques, cette option vous permet de vous concentrer sur vos priorités en évitant le stress du trafic et du stationnement.
+            Installez-vous confortablement et laissez-vous conduire par nos chauffeurs professionnels à Casablanca. Idéale pour vos rendez-vous d'affaires ou circuits touristiques, cette option vous évite le stress du trafic urbain et du stationnement.
           </p>
         </article>
 
@@ -102,11 +102,11 @@
           </div>
 
           <h3 class="mt-6 text-xl font-bold text-[#102a43]">
-            Disponibilité 7j/7
+            Agence de Location Disponible 7j/7
           </h3>
 
           <p class="mt-3 text-sm leading-6 text-gray-600">
-            Parce que vos besoins de mobilité n'attendent pas, notre agence reste pleinement opérationnelle tous les jours de la semaine, y compris les week-ends et les jours fériés. Vous bénéficiez ainsi d'une flexibilité totale pour planifier, réserver, retirer ou restituer vos véhicules selon votre propre calendrier.
+            Parce que vos besoins de mobilité n'attendent pas, notre agence reste pleinement opérationnelle tous les jours à Casablanca, week-ends et jours fériés inclus. Réservez, retirez ou restituez vos voitures selon votre propre calendrier.
           </p>
         </article>
 
@@ -134,11 +134,11 @@
           </div>
 
           <h3 class="mt-6 text-xl font-bold text-[#102a43]">
-            Accompagnement & Suivi
+            Assistance & Suivi Personnalisé
           </h3>
 
           <p class="mt-3 text-sm leading-6 text-gray-600">
-            Profitez d'un service client sur-mesure dès le premier contact. Nos conseillers dédiés vous guident dans le choix de la catégorie de véhicule la plus adaptée et vous apportent une assistance continue tout au long de votre contrat de location pour répondre à vos demandes spécifiques et imprévus de route.
+            Profitez d'un accompagnement sur-mesure pour votre location automobile. Nos conseillers dédiés vous guident vers le meilleur choix de véhicule et vous apportent une assistance continue pour répondre à tous vos imprévus de route.
           </p>
         </article>
       </div>

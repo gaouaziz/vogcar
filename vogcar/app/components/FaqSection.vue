@@ -27,16 +27,16 @@
           id="faq-title"
           class="max-w-2xl text-3xl font-bold leading-tight tracking-tight text-[#102a43] sm:text-4xl lg:text-5xl"
         >
-          Des réponses à vos questions
+          FAQ : Louer une voiture à Casablanca
         </h2>
 
         <!-- Introduction -->
         <p
           class="mt-5 max-w-2xl text-base leading-7 text-gray-600 sm:text-lg"
         >
-          Vous souhaitez en savoir plus sur la location de voiture,
-          les réservations ou nos services ? Retrouvez ici les réponses
-          aux questions les plus fréquentes concernant VOGCAR.
+          Vous souhaitez en savoir plus sur les conditions de <strong>location de voiture à Casablanca</strong>,
+          les modalités de réservation à l'aéroport ou nos tarifs ? Retrouvez ici toutes les réponses
+          aux questions fréquentes concernant l'agence VOGCAR.
         </p>
 
         <!-- Bottom contact -->
