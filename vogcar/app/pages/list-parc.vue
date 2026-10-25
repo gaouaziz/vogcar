@@ -599,22 +599,22 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'VOGCAR | Liste de parc',
+  title: 'Notre Flotte de Véhicules à Louer | VOGCAR',
   description:
-    'Découvrez le parc automobile VOGCAR. Citadines, berlines, SUV et véhicules familiaux disponibles à la location.',
+    'Découvrez notre parc automobile à Casablanca : citadines économiques, berlines confortables et SUV. Trouvez la voiture idéale pour votre séjour.',
 
-  ogTitle: 'Liste de parc | VOGCAR',
+  ogTitle: 'Notre Flotte de Véhicules à Louer | VOGCAR',
   ogDescription:
-    'Découvrez les véhicules disponibles chez VOGCAR et choisissez celui qui correspond à vos besoins.',
+    'Découvrez notre parc automobile à Casablanca : citadines économiques, berlines confortables et SUV. Trouvez la voiture idéale pour votre séjour.',
   ogType: 'website',
   ogUrl: `${config.public.siteUrl}/list-parc`,
   ogImage: `${config.public.mediaUrl}/images/vog-car-list-parc.jpg`,
   ogImageAlt: 'VOGCAR - Location de voitures à Casablanca',
 
   twitterCard: 'summary_large_image',
-  twitterTitle: 'VOGCAR | Location de voitures à Casablanca',
+  twitterTitle: 'Notre Flotte de Véhicules à Louer | VOGCAR',
   twitterDescription:
-    'Découvrez les véhicules disponibles chez VOGCAR et choisissez celui qui correspond à vos besoins.',
+    'Découvrez notre parc automobile à Casablanca : citadines économiques, berlines confortables et SUV. Trouvez la voiture idéale pour votre séjour.',
   twitterImage: `${config.public.mediaUrl}/images/vog-car-list-parc.jpg`
 })
 

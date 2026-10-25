@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     sitemap: {
       siteUrl: process.env.SITE_URL,
       siteName: 'VOGCAR',
-      xls: false,
+      xsl: false,
       exclude: [
         '/tv'
       ],
@@ -73,7 +73,7 @@ export default defineNuxtConfig({
           priority: 0.8,
           images: [
             {
-              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/fiat-scudo-hero.jpg?v=1.0`,
+              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/fiat-scudo-hero.jpg`,
               title: 'Fiat Scudo Automatique 2025 Aéroport Casablanca',
               caption: 'Location Fiat Scudo automatique 2025 à Casablanca, 1 + 8 places. Idéal pour agences de tourisme, transferts aéroport, voyages et transport de groupes.'
             }
@@ -85,7 +85,7 @@ export default defineNuxtConfig({
           priority: 0.8,
           images: [
             {
-              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/renault-express-hero.png?v=1.0`,
+              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/renault-express-hero.png`,
               title: 'Location Renault Express 2025 au Maroc | VOG CAR',
               caption: 'Location de Renault Express 2025 à Casablanca et au Maroc. Idéal pour vos livraisons urbaines, grossistes, commerçants et e-commerce.'
             }
@@ -97,9 +97,21 @@ export default defineNuxtConfig({
           priority: 0.9,
           images: [
             {
-              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/citroen-ami-hero.jpg?v=1.0`,
+              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/citroen-ami-hero.jpg`,
               title: 'Citroën Ami Publicité Mobile Casablanca',
               caption: 'Flotte de Citroën Ami électriques pour campagne publicitaire'
+            }
+          ]
+        },
+        {
+          loc: '/visiter-casablanca-en-voiture',
+          changefreq: 'weekly',
+          priority: 0.9,
+          images: [
+            {
+              loc: `${process.env.NUXT_PUBLIC_MEDIA_URL}/images/visiter-casablanca-vogcar.png`,
+              title: 'Visitez Casablanca en Voiture : Guide & Conseils | VOGCAR',
+              caption: 'Louez votre voiture à Casablanca et explorez la ville en toute liberté : Mosquée Hassan II, Habous et Aïn Diab. Réservez votre véhicule chez VOG CAR !'
             }
           ]
         }
