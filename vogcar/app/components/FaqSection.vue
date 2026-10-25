@@ -39,6 +39,44 @@
           aux questions fréquentes concernant l'agence VOGCAR.
         </p>
 
+        <!-- FAQ Accordion List -->
+        <div class="mt-8 space-y-4 max-w-2xl">
+          <div
+            v-for="(item, index) in faqItems"
+            :key="index"
+            class="rounded-xl border border-gray-200/60 bg-white p-4 shadow-sm transition-all"
+          >
+            <button
+              class="flex w-full items-center justify-between text-left font-semibold text-[#102a43] transition hover:text-[#008f83]"
+              @click="toggleFaq(index)"
+            >
+              <span>{{ item.question }}</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 shrink-0 text-[#008f83] transition-transform duration-300"
+                :class="{ 'rotate-180': activeIndex === index }"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div
+              v-show="activeIndex === index"
+              class="mt-3 text-sm leading-6 text-gray-600 border-t border-gray-100 pt-3"
+            >
+              <p>{{ item.answer }}</p>
+            </div>
+          </div>
+        </div>
+
         <!-- Bottom contact -->
         <div
           class="mt-8 flex flex-col gap-4 rounded-2xl border border-[#008f83]/15 bg-white p-5 shadow-sm sm:flex-row sm:items-center sm:justify-between"
@@ -124,6 +162,32 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
+import { ref } from 'vue'
+
 const config = useRuntimeConfig()
+const activeIndex = ref(null)
+
+const faqItems = ref([
+  {
+    question: 'Quelles sont les conditions pour louer une voiture à Casablanca chez VOGCAR ?',
+    answer: 'Pour louer un véhicule, le conducteur doit être âgé d\'au moins 21 ans et posséder un permis de conduire valide depuis plus de 2 ans. Une pièce d\'identité (passeport ou CIN) ainsi qu\'une caution sont également requises lors de la signature du contrat de location.'
+  },
+  {
+    question: 'Proposez-vous la livraison de voiture à l\'aéroport de Casablanca (CMN) ?',
+    answer: 'Oui, VOGCAR propose un service de livraison et de restitution directement à l\'aéroport Mohammed V de Casablanca. Nos agents vous attendent à la sortie du terminal pour vous remettre les clés de votre voiture de location dès votre arrivée.'
+  },
+  {
+    question: 'Quels types de véhicules sont disponibles dans votre agence ?',
+    answer: 'Notre flotte automobile comprend une large sélection de véhicules récents et parfaitement entretenus : des citadines économiques idéales pour circuler dans Casablanca, des berlines confortables, des SUV spacieux ainsi que des véhicules familiaux comme le Fiat Scudo (9 places).'
+  },
+  {
+    question: 'Comment puis-je réserver une voiture et quel est le prix moyen ?',
+    answer: 'Vous pouvez effectuer une demande de réservation directement en ligne via notre formulaire ou nous contacter par WhatsApp. Nos tarifs débutent à partir de 199 Dh par jour selon le modèle sélectionné et la durée de votre location.'
+  }
+])
+
+const toggleFaq = (index) => {
+  activeIndex.value = activeIndex.value === index ? null : index
+}
 </script>
