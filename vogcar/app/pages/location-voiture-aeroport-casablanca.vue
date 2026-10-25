@@ -10,7 +10,7 @@
           alt="Véhicules VOG CAR à Casablanca"
           class="h-full w-full object-cover"
           fetchpriority="high"
-        />
+        >
       </div>
 
       <div
@@ -43,7 +43,10 @@
               class="inline-flex items-center justify-center rounded-xl bg-[#00a99d] px-7 py-4 font-bold text-white transition hover:bg-[#008f83]"
             >
               Découvrir nos véhicules
-              <span class="ml-2" aria-hidden="true">→</span>
+              <span
+                class="ml-2"
+                aria-hidden="true"
+              >→</span>
             </a>
 
             <a
@@ -109,7 +112,10 @@
             class="mt-7 inline-flex items-center font-bold text-[#008f83] hover:text-[#00766d]"
           >
             Contacter notre équipe
-            <span class="ml-2" aria-hidden="true">→</span>
+            <span
+              class="ml-2"
+              aria-hidden="true"
+            >→</span>
           </a>
         </div>
 
@@ -129,7 +135,9 @@
                 ✓
               </span>
               <div>
-                <h4 class="font-bold">Livraison à Mohammed V</h4>
+                <h4 class="font-bold">
+                  Livraison à Mohammed V
+                </h4>
                 <p class="mt-1 text-sm leading-6 text-gray-600">
                   Retrouvez votre véhicule directement à l’aéroport selon les
                   modalités confirmées lors de la réservation.
@@ -145,7 +153,9 @@
                 ✓
               </span>
               <div>
-                <h4 class="font-bold">Un chauffeur à votre disposition</h4>
+                <h4 class="font-bold">
+                  Un chauffeur à votre disposition
+                </h4>
                 <p class="mt-1 text-sm leading-6 text-gray-600">
                   Un chauffeur est disponible pour faciliter votre prise en
                   charge et la remise du véhicule.
@@ -161,7 +171,9 @@
                 ✓
               </span>
               <div>
-                <h4 class="font-bold">Une réservation organisée à l’avance</h4>
+                <h4 class="font-bold">
+                  Une réservation organisée à l’avance
+                </h4>
                 <p class="mt-1 text-sm leading-6 text-gray-600">
                   Communiquez vos dates et votre heure d’arrivée pour préparer
                   votre demande de location.
@@ -204,7 +216,9 @@
             >
               🚗
             </div>
-            <h3 class="text-xl font-bold">Citadines</h3>
+            <h3 class="text-xl font-bold">
+              Citadines
+            </h3>
             <p class="mt-3 text-sm leading-6 text-gray-600">
               Pratiques pour circuler dans Casablanca et se garer plus
               facilement en ville.
@@ -226,7 +240,9 @@
             >
               🚘
             </div>
-            <h3 class="text-xl font-bold">Berlines</h3>
+            <h3 class="text-xl font-bold">
+              Berlines
+            </h3>
             <p class="mt-3 text-sm leading-6 text-gray-600">
               Un choix adapté aux déplacements personnels et professionnels,
               selon les modèles disponibles.
@@ -248,7 +264,9 @@
             >
               🚙
             </div>
-            <h3 class="text-xl font-bold">SUV</h3>
+            <h3 class="text-xl font-bold">
+              SUV
+            </h3>
             <p class="mt-3 text-sm leading-6 text-gray-600">
               Une option à considérer pour davantage d’espace et des trajets
               en famille ou entre amis.
@@ -270,7 +288,9 @@
             >
               🚐
             </div>
-            <h3 class="text-xl font-bold">Utilitaires</h3>
+            <h3 class="text-xl font-bold">
+              Utilitaires
+            </h3>
             <p class="mt-3 text-sm leading-6 text-gray-600">
               Pour certains besoins professionnels, sous réserve de
               disponibilité du véhicule souhaité.
@@ -325,7 +345,9 @@
         </div>
 
         <div class="rounded-2xl border border-white/15 bg-white/5 p-6 sm:p-8">
-          <h3 class="text-xl font-bold">Pour organiser la livraison</h3>
+          <h3 class="text-xl font-bold">
+            Pour organiser la livraison
+          </h3>
 
           <ul class="mt-6 space-y-4 text-white/85">
             <li class="flex gap-3">
@@ -499,6 +521,7 @@
     </section>
   </main>
 </template>
+
 <script setup lang="ts">
 const config = useRuntimeConfig()
 
@@ -527,33 +550,33 @@ const faqs = [
     question:
       'Puis-je récupérer ma voiture directement à l’aéroport Mohammed V ?',
     answer:
-      'Oui. VOG CAR propose la livraison du véhicule directement à l’aéroport Mohammed V de Casablanca. Contactez notre équipe pour organiser votre prise en charge.',
+      'Oui. VOG CAR propose la livraison du véhicule directement à l’aéroport Mohammed V de Casablanca. Contactez notre équipe pour organiser votre prise en charge.'
   },
   {
     question: 'Un chauffeur est-il disponible à mon arrivée ?',
     answer:
-      'Un chauffeur est disponible pour le client dans le cadre de la prise en charge organisée avec VOG CAR. Communiquez votre heure d’arrivée et les détails de votre vol lors de la réservation.',
+      'Un chauffeur est disponible pour le client dans le cadre de la prise en charge organisée avec VOG CAR. Communiquez votre heure d’arrivée et les détails de votre vol lors de la réservation.'
   },
   {
     question: 'Comment réserver une voiture à l’aéroport de Casablanca ?',
     answer:
-      'Contactez VOG CAR en indiquant vos dates, votre heure d’arrivée, les informations de votre vol si nécessaire et le type de véhicule souhaité. Notre équipe vous confirmera la disponibilité et les modalités.',
+      'Contactez VOG CAR en indiquant vos dates, votre heure d’arrivée, les informations de votre vol si nécessaire et le type de véhicule souhaité. Notre équipe vous confirmera la disponibilité et les modalités.'
   },
   {
     question: 'Quels types de véhicules puis-je louer ?',
     answer:
-      'Vous pouvez consulter le parc automobile VOG CAR pour découvrir les catégories proposées, notamment les citadines, les SUV et les véhicules utilitaires. La disponibilité dépend des dates de location.',
+      'Vous pouvez consulter le parc automobile VOG CAR pour découvrir les catégories proposées, notamment les citadines, les SUV et les véhicules utilitaires. La disponibilité dépend des dates de location.'
   },
   {
     question: 'Quel est le prix d’une location de voiture à l’aéroport ?',
     answer:
-      'Le prix dépend du véhicule choisi, de la durée de location et des modalités de livraison. Contactez VOG CAR pour obtenir un tarif adapté à votre demande.',
+      'Le prix dépend du véhicule choisi, de la durée de location et des modalités de livraison. Contactez VOG CAR pour obtenir un tarif adapté à votre demande.'
   },
   {
     question: 'Puis-je réserver avant mon arrivée au Maroc ?',
     answer:
-      'Oui. Nous vous recommandons de contacter VOG CAR à l’avance afin de vérifier la disponibilité du véhicule et d’organiser sa livraison à l’aéroport Mohammed V.',
-  },
+      'Oui. Nous vous recommandons de contacter VOG CAR à l’avance afin de vérifier la disponibilité du véhicule et d’organiser sa livraison à l’aéroport Mohammed V.'
+  }
 ]
 
 const bookingSteps = [
@@ -561,28 +584,28 @@ const bookingSteps = [
     number: '01',
     title: 'Choisissez votre véhicule',
     description:
-      'Consultez notre parc automobile et sélectionnez le véhicule adapté à votre séjour à Casablanca.',
+      'Consultez notre parc automobile et sélectionnez le véhicule adapté à votre séjour à Casablanca.'
   },
   {
     number: '02',
     title: 'Communiquez votre arrivée',
     description:
-      'Indiquez votre date, votre heure d’arrivée et les informations utiles pour organiser la prise en charge.',
+      'Indiquez votre date, votre heure d’arrivée et les informations utiles pour organiser la prise en charge.'
   },
   {
     number: '03',
     title: 'Retrouvez votre véhicule',
     description:
-      'Après confirmation de votre réservation, VOG CAR organise la livraison de votre voiture à l’aéroport Mohammed V.',
-  },
+      'Après confirmation de votre réservation, VOG CAR organise la livraison de votre voiture à l’aéroport Mohammed V.'
+  }
 ]
 
 useHead({
   link: [
     {
       rel: 'canonical',
-      href: `${config.public.siteUrl}/location-voiture-aeroport-casablanca`,
-    },
+      href: `${config.public.siteUrl}/location-voiture-aeroport-casablanca`
+    }
   ],
   script: [
     {
@@ -590,16 +613,16 @@ useHead({
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: faqs.map((faq) => ({
+        'mainEntity': faqs.map(faq => ({
           '@type': 'Question',
-          name: faq.question,
-          acceptedAnswer: {
+          'name': faq.question,
+          'acceptedAnswer': {
             '@type': 'Answer',
-            text: faq.answer,
-          },
-        })),
-      }),
-    },
-  ],
+            'text': faq.answer
+          }
+        }))
+      })
+    }
+  ]
 })
 </script>

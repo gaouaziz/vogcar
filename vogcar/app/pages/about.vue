@@ -501,21 +501,21 @@ useHead({
   ]
 })
 useSeoMeta({
-  title: 'VOGCAR |  | Location de voitures',
+  title: 'À Propos de Notre Agence de Location | VOGCAR',
   description:
-    'VOGCAR, votre partenaire pour la location de voitures à Casablanca. Découvrez nos véhicules et profitez d’un service simple, flexible et professionnel.',
-  ogTitle: 'À propos de VOGCAR',
+    'Découvrez l\'histoire de VOGCAR, votre partenaire de confiance pour la location de voitures à Casablanca. Une équipe dédiée à votre service.',
+  ogTitle: 'À Propos de Notre Agence de Location | VOGCAR',
   ogDescription:
-    'Découvrez VOGCAR et notre approche de la location automobile.',
+    'Découvrez l\'histoire de VOGCAR et nos engagements pour votre location de voiture à Casablanca.',
   ogType: 'website',
   ogUrl: `${config.public.siteUrl}/about`,
   ogImage: `${config.public.mediaUrl}/images/vog-car-about-hero.jpg`,
   ogImageAlt: 'VOGCAR - Location de voitures à Casablanca',
 
   twitterCard: 'summary_large_image',
-  twitterTitle: 'VOGCAR | Location de voitures à Casablanca',
+  twitterTitle: 'À Propos de Notre Agence de Location | VOGCAR',
   twitterDescription:
-    'Découvrez VOGCAR et notre approche de la location automobile.',
+    'Découvrez l\'histoire de VOGCAR et nos engagements pour votre location de voiture à Casablanca.',
   twitterImage: `${config.public.mediaUrl}/images/vog-car-about-hero.jpg`
 })
 </script>
