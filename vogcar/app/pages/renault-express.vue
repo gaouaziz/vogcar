@@ -26,19 +26,19 @@ import ExpressFaq from '~/components/products/renaultExpress/ExpressFaq.vue'
 const config = useRuntimeConfig()
 
 useSeoMeta({
-  title: 'Location Renault Express 2025 au Maroc | VOG CAR',
+  title: 'Location Renault Express Utilitaire à Casablanca | VOGCAR',
 
   description:
-    'Location de Renault Express 2025 à Casablanca et au Maroc. Idéal pour vos livraisons urbaines, grossistes, commerçants et e-commerce.',
+    'Louez un Renault Express à Casablanca. Utilitaire idéal pour vos livraisons urbaines, transferts de marchandises, e-commerce et professionnels.',
 
   keywords:
     'Renault Express Casablanca, location Renault Express Maroc, utilitaire Renault Express 2025, location utilitaire Casablanca, véhicule de livraison Maroc, location fourgonnette Derb Omar, LLD utilitaire Maroc, transport de marchandises Casablanca, VOG CAR utilitaire, location Express pro',
 
   // Open Graph / Facebook
   ogType: 'website',
-  ogTitle: 'Location Renault Express 2025 au Maroc | VOG CAR',
+  ogTitle: 'Location Renault Express Utilitaire à Casablanca | VOGCAR',
   ogDescription:
-    'Optimisez votre logistique avec le Renault Express Van 2025. Idéal pour les professionnels, grossistes et e-commerçants. Volume de 3,3 m³ disponible chez VOG CAR.',
+    'Optimisez vos livraisons à Casablanca avec la location d\'un Renault Express récent et robuste chez VOGCAR.',
   ogUrl: `${config.public.siteUrl}/renault-express`,
   ogImage: `${config.public.mediaUrl}/images/renault-express-hero.png`,
   ogImageAlt: 'Location Renault Express Van 2025 utilitaire au Maroc - VOG CAR',
@@ -47,9 +47,9 @@ useSeoMeta({
 
   // Twitter / X
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Location Renault Express 2025 au Maroc | VOG CAR',
+  twitterTitle: 'Location Renault Express Utilitaire à Casablanca | VOGCAR',
   twitterDescription:
-    'Profitez d\'un volume de chargement de 3,3 m³ pour vos livraisons professionnelles au Maroc avec le Renault Express 2025 chez VOG CAR.',
+    'Optimisez vos livraisons à Casablanca avec la location d\'un Renault Express récent et robuste chez VOGCAR.',
   twitterImage: `${config.public.mediaUrl}/images/renault-express-hero.png`,
   twitterImageAlt: 'Renault Express Van 2025 - VOG CAR'
 })

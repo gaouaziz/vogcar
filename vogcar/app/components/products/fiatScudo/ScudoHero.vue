@@ -4,7 +4,7 @@
     <div class="absolute inset-0 z-0">
       <NuxtImg
         :src="`${config.public.mediaUrl}/images/fiat-scudo-hero.jpg`"
-        alt="Fiat Scudo automatique 2025 VOG CAR"
+        alt="Location Fiat Scudo automatique 2025 à Casablanca - VOG CAR"
         sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
         loading="eager"
         fetchpriority="high"
@@ -33,20 +33,18 @@
           <span
             class="h-2 w-2 rounded-full bg-[#48d5c7] shadow-[0_0_12px_rgba(72,213,199,0.8)]"
           />
-          Solution transport de groupe
+          Location véhicule 9 places Casablanca
         </div>
 
         <!-- Heading -->
         <h1 class="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-          Transportez votre groupe
+          Location Fiat Scudo à Casablanca
           <span class="text-[#48d5c7]">en toute sérénité.</span>
         </h1>
 
         <!-- Description -->
         <p class="mt-6 max-w-2xl text-lg leading-8 text-white/80 sm:text-xl">
-          Fiat Scudo automatique 2025, 1 + 8 places :
-          une solution confortable et pratique pour les transferts,
-          excursions, voyages et déplacements professionnels à Casablanca.
+          Découvrez notre <strong>Fiat Scudo automatique 2025</strong> (1 + 8 places). Une solution de transport idéale pour vos circuits touristiques au Maroc, séjours en famille et transferts de groupe depuis l'<strong>aéroport de Casablanca</strong>.
         </p>
 
         <!-- CTA Buttons -->
@@ -94,6 +92,6 @@ const carSpecs = [
   { value: '1 + 8', label: 'places' },
   { value: '2025', label: 'modèle' },
   { value: 'Auto', label: 'transmission' },
-  { value: 'Pro', label: 'usage' }
+  { value: 'Pro / Tourisme', label: 'usage' } // 🟢 Option élargie pour cibler le tourisme
 ]
 </script>
