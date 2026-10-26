@@ -4,7 +4,7 @@
     <div class="absolute inset-0 z-0">
       <NuxtImg
         :src="`${config.public.mediaUrl}/images/renault-express-hero.png`"
-        alt="Renault Express 2025 VOG CAR"
+        alt="Location Renault Express utilitaire 2025 à Casablanca - VOG CAR"
         sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
         loading="eager"
         fetchpriority="high"
@@ -33,20 +33,18 @@
           <span
             class="h-2 w-2 rounded-full bg-[#48d5c7] shadow-[0_0_12px_rgba(72,213,199,0.8)]"
           />
-          Solution transport de marchandises
+          Location utilitaire Casablanca
         </div>
 
         <!-- Heading -->
         <h1 class="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-          Optimisez vos livraisons
-          <span class="text-[#48d5c7]">en toute efficacité.</span>
+          Location Renault Express
+          <span class="text-[#48d5c7]">à Casablanca.</span>
         </h1>
 
         <!-- Description -->
         <p class="mt-6 max-w-2xl text-lg leading-8 text-white/80 sm:text-xl">
-          Renault Express Van 2025, 3.3 m³ de volume utile :
-          une solution robuste, économique et performante pour la distribution de colis,
-          les livraisons urbaines et les déplacements de vos collaborateurs à Casablanca.
+          Découvrez notre **Renault Express Van 2025** (3.3 m³ de volume utile). Un véhicule de location robuste, économique et performant, idéal pour vos **livraisons urbaines**, distribution de colis et besoins logistiques professionnels au Maroc.
         </p>
 
         <!-- CTA Buttons -->
@@ -87,6 +85,6 @@ const carSpecs = [
   { value: '3.3 m³', label: 'volume utile' },
   { value: '2025', label: 'modèle' },
   { value: 'Manuelle', label: 'transmission' },
-  { value: 'Pro', label: 'usage' }
+  { value: 'Entreprise / B2B', label: 'usage' } // 🟢 Ciblage B2B plus explicite pour Google
 ]
 </script>

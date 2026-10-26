@@ -22,19 +22,19 @@ import ScudoCta from '~/components/products/fiatScudo/ScudoCta.vue'
 const config = useRuntimeConfig()
 
 useSeoMeta({
-  title: 'Fiat Scudo Automatique 2025 Aéroport | 9 places | VOG CAR',
+  title: 'Location Fiat Scudo 9 places à Casablanca | VOGCAR',
 
   description:
-    'Location Fiat Scudo automatique 2025 à Casablanca, 1 + 8 places. Idéal pour agences de tourisme, transferts aéroport, voyages et transport de groupes.',
+    'Louez un Fiat Scudo automatique (9 places) à Casablanca. Véhicule idéal pour les groupes, circuits touristiques et transferts aéroport Mohammed V.',
 
   keywords:
     'Fiat Scudo Casablanca, location Fiat Scudo Casablanca, Fiat Scudo 9 places, Fiat Scudo automatique, Fiat Scudo 2025, transport groupe Casablanca, transport touristique Casablanca, transfert aéroport Casablanca, agence tourisme Casablanca, location minibus Casablanca',
 
   // Open Graph / Facebook
   ogType: 'website',
-  ogTitle: 'Fiat Scudo Automatique 2025 | 9 places | VOG CAR',
+  ogTitle: 'Location Fiat Scudo 9 places à Casablanca | VOGCAR',
   ogDescription:
-    'Fiat Scudo automatique 2025, 1 + 8 places à Casablanca. Une solution idéale pour le tourisme, les transferts aéroport, les voyages et les groupes.',
+    'Besoin d\'espace ? Découvrez notre Fiat Scudo 9 places à louer à Casablanca au meilleur prix pour vos trajets en groupe.',
   ogUrl: `${config.public.siteUrl}/fiat-scudo`,
   ogImage: `${config.public.mediaUrl}/images/fiat-scudo-hero.jpg`,
   ogImageAlt: 'Fiat Scudo automatique 2025 9 places à Casablanca - VOG CAR',
@@ -43,9 +43,9 @@ useSeoMeta({
 
   // Twitter / X
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Fiat Scudo Automatique 2025 | 9 places | VOG CAR',
+  twitterTitle: 'Location Fiat Scudo 9 places à Casablanca | VOGCAR',
   twitterDescription:
-    'Fiat Scudo 1 + 8 places à Casablanca pour tourisme, transferts aéroport, voyages et transport de groupes.',
+    'Besoin d\'espace ? Découvrez notre Fiat Scudo 9 places à louer à Casablanca au meilleur prix pour vos trajets en groupe.',
   twitterImage: `${config.public.mediaUrl}/images/fiat-scudo-hero.jpg`,
   twitterImageAlt: 'Fiat Scudo automatique 2025 9 places - VOG CAR'
 })
