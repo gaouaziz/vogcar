@@ -25,24 +25,23 @@
           <p
             class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-[#48d5c7]"
           >
-            Notre parc automobile
+            Notre parc automobile au Maroc
           </p>
 
           <h1
             class="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl"
           >
-            Trouvez le véhicule
+            Location de véhicule à Casablanca :
             <span class="text-[#48d5c7]">
-              qui vous correspond
+              Notre Flotte
             </span>
           </h1>
 
           <p
             class="mt-6 max-w-2xl text-base leading-7 text-white/80 sm:text-lg"
           >
-            Découvrez notre sélection de véhicules disponibles à la location.
-            Citadines, berlines, SUV et véhicules familiaux pour vos
-            déplacements professionnels ou personnels.
+            Découvrez notre large sélection de voitures récentes disponibles à la location.
+            Trouvez la <strong>citadine</strong> idéale pour le centre-ville, une <strong>berline</strong> élégante pour vos affaires ou un <strong>SUV familial</strong> pour vos transferts depuis l'aéroport de Casablanca.
           </p>
 
           <a
@@ -93,14 +92,13 @@
           <h2
             class="mt-3 text-3xl font-bold leading-tight text-[#102a43] sm:text-4xl"
           >
-            Une gamme adaptée à vos besoins
+            Louer une voiture à Casablanca : Choisissez votre catégorie
           </h2>
 
           <p
             class="mt-5 text-base leading-7 text-gray-600"
           >
-            Choisissez le véhicule qui correspond à votre déplacement
-            et contactez-nous pour votre réservation.
+            Sélectionnez le véhicule idéal adapté à la durée de votre séjour ou à vos impératifs professionnels au Maroc, et effectuez votre demande de réservation en quelques instants.
           </p>
         </div>
 
@@ -599,22 +597,22 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'Notre Flotte de Véhicules à Louer | VOGCAR',
+  title: 'Notre Flotte de Véhicules à Louer à Casablanca | VOGCAR',
   description:
-    'Découvrez notre parc automobile à Casablanca : citadines économiques, berlines confortables et SUV. Trouvez la voiture idéale pour votre séjour.',
+    'Découvrez notre parc auto à Casablanca : citadines, berlines, SUV et utilitaires. Louez le véhicule idéal au meilleur prix avec l\'agence VOGCAR.',
 
-  ogTitle: 'Notre Flotte de Véhicules à Louer | VOGCAR',
+  ogTitle: 'Notre Flotte de Véhicules à Louer à Casablanca | VOGCAR',
   ogDescription:
-    'Découvrez notre parc automobile à Casablanca : citadines économiques, berlines confortables et SUV. Trouvez la voiture idéale pour votre séjour.',
+    'Trouvez la voiture idéale pour votre séjour au Maroc. Large choix de véhicules récents, climatisés et parfaitement entretenus avec VOGCAR.',
   ogType: 'website',
   ogUrl: `${config.public.siteUrl}/list-parc`,
   ogImage: `${config.public.mediaUrl}/images/vog-car-list-parc.jpg`,
   ogImageAlt: 'VOGCAR - Location de voitures à Casablanca',
 
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Notre Flotte de Véhicules à Louer | VOGCAR',
+  twitterTitle: 'Notre Flotte de Véhicules à Louer à Casablanca | VOGCAR',
   twitterDescription:
-    'Découvrez notre parc automobile à Casablanca : citadines économiques, berlines confortables et SUV. Trouvez la voiture idéale pour votre séjour.',
+    'Trouvez la voiture idéale pour votre séjour au Maroc. Large choix de véhicules récents, climatisés et parfaitement entretenus avec VOGCAR.',
   twitterImage: `${config.public.mediaUrl}/images/vog-car-list-parc.jpg`
 })
 
