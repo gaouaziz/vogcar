@@ -21,6 +21,15 @@ import ScudoCta from '~/components/products/fiatScudo/ScudoCta.vue'
 
 const config = useRuntimeConfig()
 
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: `${config.public.siteUrl}/fiat-scudo`
+    }
+  ]
+})
+
 useSeoMeta({
   title: 'Location Fiat Scudo 9 places à Casablanca | VOGCAR',
 
