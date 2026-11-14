@@ -553,22 +553,22 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Location Voiture Casablanca | VOG CAR',
+  title: 'Location Voiture Casablanca : Tarifs, Véhicules & Devis | VOG CAR',
   description:
-    'Découvrez VOG CAR pour votre location de voiture à Casablanca : citadines, SUV et utilitaires adaptés à vos besoins.',
+    'Location de voiture à Casablanca au meilleur prix avec VOG CAR. Citadines, SUV et utilitaires récents. Prise en charge rapide au centre-ville et à l’aéroport Mohammed V.',
 
-  ogTitle: 'Location Voiture Casablanca | VOG CAR',
+  ogTitle: 'Location Voiture Casablanca : Tarifs, Véhicules & Devis | VOG CAR',
   ogDescription:
-    'Découvrez VOG CAR pour votre location de voiture à Casablanca : citadines, SUV et utilitaires adaptés à vos besoins.',
+    'Location de voiture à Casablanca au meilleur prix avec VOG CAR. Citadines, SUV et utilitaires récents. Prise en charge rapide au centre-ville et à l’aéroport Mohammed V.',
   ogType: 'website',
   ogUrl: `${config.public.siteUrl}/location-voiture-casablanca`,
   ogImage: `${config.public.mediaUrl}/images/location-voiture-casablanca.png`,
   ogImageAlt: 'VOGCAR - Location de voitures à Casablanca',
 
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Location Voiture Casablanca | VOG CAR',
+  twitterTitle: 'Location Voiture Casablanca : Tarifs, Véhicules & Devis | VOG CAR',
   twitterDescription:
-    'Découvrez VOG CAR pour votre location de voiture à Casablanca : citadines, SUV et utilitaires adaptés à vos besoins.',
+    'Location de voiture à Casablanca au meilleur prix avec VOG CAR. Citadines, SUV et utilitaires récents. Prise en charge rapide au centre-ville et à l’aéroport Mohammed V.',
   twitterImage: `${config.public.mediaUrl}/images/location-voiture-casablanca.png`
 })
 
@@ -580,6 +580,27 @@ useHead({
     }
   ],
   script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'name': 'Accueil',
+            'item': `${config.public.siteUrl || 'https://www.vogcar.site'}/`
+          },
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'name': 'Location voiture Casablanca',
+            'item': `${config.public.siteUrl || 'https://www.vogcar.site'}/location-voiture-casablanca`
+          }
+        ]
+      })
+    },
     {
       type: 'application/ld+json',
       innerHTML: JSON.stringify({
