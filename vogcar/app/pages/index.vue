@@ -81,13 +81,13 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'VOG CAR — Agence de Location de Voiture à Casablanca & Aéroport',
+  title: 'VOG CAR — Location de Voiture à Casablanca & Aéroport',
   description:
-    'VOG CAR, votre agence de location de voiture à Casablanca et aéroport Mohammed V. Large choix de véhicules récents au meilleur prix : citadines, SUV et utilitaires.',
+    'VOG CAR : agence de location de voiture à Casablanca et aéroport Mohammed V. Véhicules récents au meilleur prix : citadines, SUV et utilitaires.',
 
-  ogTitle: 'VOG CAR — Agence de Location de Voiture à Casablanca & Aéroport',
+  ogTitle: 'VOG CAR — Location de Voiture à Casablanca & Aéroport',
   ogDescription:
-    'VOG CAR, agence de location de voiture à Casablanca et aéroport Mohammed V. Solutions simples, flexibles et professionnelles adaptées à vos besoins.',
+    'VOG CAR : agence de location de voiture à Casablanca et aéroport Mohammed V. Véhicules récents au meilleur prix : citadines, SUV et utilitaires.',
   ogType: 'website',
   ogUrl: config.public.siteUrl,
   ogImage: `${config.public.mediaUrl}/images/vog-car-hero.jpg`,
