@@ -553,22 +553,22 @@ const faqs = [
 ]
 
 useSeoMeta({
-  title: 'Location Voiture Casablanca : Tarifs, Véhicules & Devis | VOG CAR',
+  title: 'Location Voiture Casablanca : Tarifs & Devis | VOG CAR',
   description:
-    'Location de voiture à Casablanca au meilleur prix avec VOG CAR. Citadines, SUV et utilitaires récents. Prise en charge rapide au centre-ville et à l’aéroport Mohammed V.',
+    'Location de voiture à Casablanca au meilleur prix avec VOG CAR. Citadines, SUV et utilitaires récents. Prise en charge rapide au centre-ville & aéroport.',
 
-  ogTitle: 'Location Voiture Casablanca : Tarifs, Véhicules & Devis | VOG CAR',
+  ogTitle: 'Location Voiture Casablanca : Tarifs & Devis | VOG CAR',
   ogDescription:
-    'Location de voiture à Casablanca au meilleur prix avec VOG CAR. Citadines, SUV et utilitaires récents. Prise en charge rapide au centre-ville et à l’aéroport Mohammed V.',
+    'Location de voiture à Casablanca au meilleur prix avec VOG CAR. Citadines, SUV et utilitaires récents. Prise en charge rapide au centre-ville & aéroport.',
   ogType: 'website',
   ogUrl: `${config.public.siteUrl}/location-voiture-casablanca`,
   ogImage: `${config.public.mediaUrl}/images/location-voiture-casablanca.png`,
   ogImageAlt: 'VOGCAR - Location de voitures à Casablanca',
 
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Location Voiture Casablanca : Tarifs, Véhicules & Devis | VOG CAR',
+  twitterTitle: 'Location Voiture Casablanca : Tarifs & Devis | VOG CAR',
   twitterDescription:
-    'Location de voiture à Casablanca au meilleur prix avec VOG CAR. Citadines, SUV et utilitaires récents. Prise en charge rapide au centre-ville et à l’aéroport Mohammed V.',
+    'Location de voiture à Casablanca au meilleur prix avec VOG CAR. Citadines, SUV et utilitaires récents. Prise en charge rapide au centre-ville & aéroport.',
   twitterImage: `${config.public.mediaUrl}/images/location-voiture-casablanca.png`
 })
 
