@@ -15,13 +15,21 @@ export default defineNuxtConfig({
     name: 'VOGCAR'
   },
 
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'fr'
+      }
+    }
+  },
+
   $production: {
 
     robots: {
-      sitemap: `${process.env.SITE_URL}/sitemap.xml`
+      sitemap: `${process.env.SITE_URL || 'https://www.vogcar.site'}/sitemap.xml`
     },
     sitemap: {
-      siteUrl: process.env.SITE_URL,
+      siteUrl: process.env.SITE_URL || 'https://www.vogcar.site',
       siteName: 'VOGCAR',
       xsl: false,
       exclude: [
@@ -147,7 +155,16 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    '/location-voiture-casablanca': { prerender: true },
+    '/location-voiture-aeroport-casablanca': { prerender: true },
+    '/list-parc': { prerender: true },
+    '/visiter-casablanca-en-voiture': { prerender: true },
+    '/about': { prerender: true },
+    '/contact': { prerender: true },
+    '/citroen-ami': { prerender: true },
+    '/renault-express': { prerender: true },
+    '/fiat-scudo': { prerender: true }
   },
 
   compatibilityDate: '2026-06-30',

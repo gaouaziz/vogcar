@@ -33,6 +33,15 @@
           Accueil
         </NuxtLink>
 
+        <!-- Location Casablanca -->
+        <NuxtLink
+          to="/location-voiture-casablanca"
+          class="py-7 text-sm transition hover:text-[#008f83]"
+          active-class="border-b-2 border-[#008f83] font-semibold text-[#008f83]"
+        >
+          Location Casablanca
+        </NuxtLink>
+
         <!-- Liste de parc -->
         <NuxtLink
           to="/list-parc"
@@ -394,6 +403,16 @@
               @click="closeMenu"
             >
               Accueil
+            </NuxtLink>
+
+            <!-- Location Casablanca -->
+            <NuxtLink
+              to="/location-voiture-casablanca"
+              class="rounded-xl px-4 py-3.5 text-sm font-semibold text-[#102a43] transition hover:bg-[#eefaf8] hover:text-[#008f83]"
+              active-class="bg-[#eefaf8] text-[#008f83]"
+              @click="closeMenu"
+            >
+              Location Casablanca
             </NuxtLink>
 
             <!-- Liste de parc -->

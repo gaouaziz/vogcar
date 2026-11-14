@@ -27,44 +27,71 @@
         <!-- Links -->
         <div>
           <h3 class="font-bold">
-            Liens utiles
+            Location & Services
           </h3>
 
           <ul class="mt-5 space-y-3 text-sm text-white/70">
             <li>
-              <a
-                href="/"
+              <NuxtLink
+                to="/"
                 class="transition hover:text-[#48d5c7]"
               >
                 Accueil
-              </a>
+              </NuxtLink>
             </li>
 
             <li>
-              <a
-                href="/list-parc"
+              <NuxtLink
+                to="/location-voiture-casablanca"
                 class="transition hover:text-[#48d5c7]"
               >
-                Liste de parc
-              </a>
+                Location voiture Casablanca
+              </NuxtLink>
             </li>
 
             <li>
-              <a
-                href="/faq"
+              <NuxtLink
+                to="/location-voiture-aeroport-casablanca"
                 class="transition hover:text-[#48d5c7]"
               >
-                FAQ
-              </a>
+                Location aéroport Mohammed V
+              </NuxtLink>
             </li>
 
             <li>
-              <a
-                href="/contact"
+              <NuxtLink
+                to="/list-parc"
+                class="transition hover:text-[#48d5c7]"
+              >
+                Liste du parc
+              </NuxtLink>
+            </li>
+
+            <li>
+              <NuxtLink
+                to="/visiter-casablanca-en-voiture"
+                class="transition hover:text-[#48d5c7]"
+              >
+                Guide : Visiter Casablanca
+              </NuxtLink>
+            </li>
+
+            <li>
+              <NuxtLink
+                to="/about"
+                class="transition hover:text-[#48d5c7]"
+              >
+                À propos
+              </NuxtLink>
+            </li>
+
+            <li>
+              <NuxtLink
+                to="/contact"
                 class="transition hover:text-[#48d5c7]"
               >
                 Contacts
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -93,7 +120,7 @@
               <span class="text-[#48d5c7]">✉</span>
 
               <a
-                href="mailto:contact@vogcar.ma"
+                href="mailto:contact@vogcar.site"
                 class="transition hover:text-white"
               >
                 contact@vogcar.site
