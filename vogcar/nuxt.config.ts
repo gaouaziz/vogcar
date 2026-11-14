@@ -10,6 +10,11 @@ export default defineNuxtConfig({
     '@nuxtjs/robots'
   ],
 
+  site: {
+    url: 'https://www.vogcar.site',
+    name: 'VOGCAR'
+  },
+
   $production: {
 
     robots: {

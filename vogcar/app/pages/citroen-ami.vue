@@ -29,6 +29,15 @@ import AmiCta from '~/components/products/citroenAmi/AmiCta.vue'
 
 const config = useRuntimeConfig()
 
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: `${config.public.siteUrl}/citroen-ami`
+    }
+  ]
+})
+
 useSeoMeta({
   title: 'Citroën Ami | Publicité mobile | VOG CAR',
   description: 'Transformez plusieurs Citroën Ami électriques en supports publicitaires mobiles pour vos campagnes de marque à Casablanca.',

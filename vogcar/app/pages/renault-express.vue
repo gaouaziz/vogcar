@@ -25,6 +25,15 @@ import ExpressFaq from '~/components/products/renaultExpress/ExpressFaq.vue'
 
 const config = useRuntimeConfig()
 
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: `${config.public.siteUrl}/renault-express`
+    }
+  ]
+})
+
 useSeoMeta({
   title: 'Location Renault Express Utilitaire à Casablanca | VOGCAR',
 
